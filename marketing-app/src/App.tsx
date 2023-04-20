@@ -1,21 +1,35 @@
-import React, { useContext } from 'react';
-import { Routes, Route } from "react-router-dom";
+import React, { useContext, useEffect } from 'react';
+import { Routes, Route, useLocation } from "react-router-dom";
 import './App.css';
+/* Constants */
+import { FRONTEND_ENDPOINTS } from 'config';
+/* Pages */
+import ApiKeyPage from 'Pages/ApiKeyPage/ApiKeyPage';
 /* Components */
-import { ThemeContext } from 'Theme/Theme';
 import DataManager from 'Components/DataManager/DataManager';
+/* Zustand */
+import { AppStore } from 'App.store';
 
 
 function App() {
-  const themeContext = useContext(ThemeContext);
+  /* Set the current location endpoint variable each page change */
+  const setActiveEndpoint = AppStore((state) => state.setActiveEndpoint)
+  const location = useLocation()
+  useEffect(() => {
+    setActiveEndpoint(window.location.pathname)
+    window.scrollTo(0, 0)
+    console.log("window.location.pathname:", window.location.pathname)
+  }, [location, setActiveEndpoint])
+  
 
   return (
-    <div className="App">
+    <div className='app'>
       <DataManager>
         <Routes>
-          <Route index element={<div>Index</div>} />
-          <Route path="about" element={<div>About</div>} />
-          <Route path="*" element={<div>Invalid URL</div>} />
+          <Route path={FRONTEND_ENDPOINTS.APIKEY} element={<ApiKeyPage />} />
+          <Route path={FRONTEND_ENDPOINTS.PARTITION} element={<div>Partition</div>} />
+          <Route path={FRONTEND_ENDPOINTS.DASHBOARD} element={<div>Dashboard</div>} />
+          <Route path="*" element={<ApiKeyPage />} />
         </Routes>
       </DataManager>
     </div>
