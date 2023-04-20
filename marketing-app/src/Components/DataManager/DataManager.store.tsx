@@ -1,4 +1,5 @@
 import { create } from 'zustand'
+import { persist, createJSONStorage } from 'zustand/middleware'
 import { 
     paritionInterface,
     partitionDataItemInterface,
@@ -26,33 +27,41 @@ interface useDataManagerStoreInterface {
 }
 
 
-export const useDataManagerStore = create<useDataManagerStoreInterface>()((set, get) => ({
-    apiKey: "",
-    setApiKey: (value) => {
-        set({ apiKey: value })
-    },
+export const useDataManagerStore = create(persist<useDataManagerStoreInterface>((
+    (set, get) => (
+        {
+            apiKey: "",
+            setApiKey: (value) => {
+                set({ apiKey: value })
+            },
 
-    partitions: [],
-    setPartitions(value) {
-        set({partitions: value})
-    },
-    selectedPartition: "",
-    setSelectedPartition(value) {
-        set({selectedPartition: value})
-    },
+            partitions: [],
+            setPartitions(value) {
+                set({partitions: value})
+            },
+            selectedPartition: "",
+            setSelectedPartition(value) {
+                set({selectedPartition: value})
+            },
 
-    sources: [],
-    setSources(value) {
-        set({sources: value})
-    },
+            sources: [],
+            setSources(value) {
+                set({sources: value})
+            },
 
-    partitionData: [],
-    setPartitionData(value) {
-        set({partitionData: value})
-    },
+            partitionData: [],
+            setPartitionData(value) {
+                set({partitionData: value})
+            },
 
-    performanceReportData: [],
-    setPerformanceReportData(value) {
-        set({performanceReportData: value})
-    },
-}))
+            performanceReportData: [],
+            setPerformanceReportData(value) {
+                set({performanceReportData: value})
+            },
+        })
+    ),
+    {
+        name: 'useDataManagerStore', // unique name
+        storage: createJSONStorage(() => localStorage),
+    }
+))
