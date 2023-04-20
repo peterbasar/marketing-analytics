@@ -23,3 +23,21 @@ export interface performanceReportItemInterface {
   roas: number,
   cpa: number,
 }
+
+export interface summaryStatisticsInterface {
+  revenue: number,
+  conversions: number,
+  spend: number
+}
+
+export interface revenueInterface {
+  revenue: number,
+}
+
+export interface conversionsInterface {
+  conversions: number,
+}
+
+export interface spendInterface {
+  spend: number
+}
