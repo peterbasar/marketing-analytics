@@ -5,5 +5,5 @@ export const FRONTEND_ENDPOINTS = {
 }
 
 export const BACKEND_ENDPOINTS = {
-    API: "https://demo-api.adtriba.app/v1/api/"
+    API: "https://demo-api.adtriba.app/v1/api/partitions/"
 }
