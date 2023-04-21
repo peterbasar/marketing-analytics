@@ -7,7 +7,8 @@
 	align-content: center;
 }
 .api-key-page-input-wrapper{
-    background: var(--gradient-primary);
+    background: var(--hex-secondary);
+    color: var(--hex-primary);
     gap: 10px;
     padding: 20px;
     border-radius: var(--border-radius);
@@ -23,5 +24,6 @@
     padding: 5px;
 }
 .api-key-page-input-wrapper > button {
-    background-color: var(--hex-tertiary);
+    color: var(--hex-secondary);
+    background-color: var(--hex-primary);
 }
