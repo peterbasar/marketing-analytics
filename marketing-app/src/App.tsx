@@ -5,6 +5,7 @@ import './App.css';
 import { FRONTEND_ENDPOINTS } from 'config';
 /* Pages */
 import ApiKeyPage from 'Pages/ApiKeyPage/ApiKeyPage';
+import PartitionPage from 'Pages/PartitionPage/PartitionPage';
 /* Components */
 import DataManager from 'Components/DataManager/DataManager';
 /* Zustand */
@@ -27,7 +28,7 @@ function App() {
       <DataManager>
         <Routes>
           <Route path={FRONTEND_ENDPOINTS.APIKEY} element={<ApiKeyPage />} />
-          <Route path={FRONTEND_ENDPOINTS.PARTITION} element={<div>Partition</div>} />
+          <Route path={FRONTEND_ENDPOINTS.PARTITION} element={<PartitionPage />} />
           <Route path={FRONTEND_ENDPOINTS.DASHBOARD} element={<div>Dashboard</div>} />
           <Route path="*" element={<ApiKeyPage />} />
         </Routes>

@@ -1,7 +1,7 @@
-export const FRONTEND_ENDPOINTS = {
-    APIKEY: "/api", 
-    PARTITION: "/partition",
-    DASHBOARD: "/dashboard",
+export enum FRONTEND_ENDPOINTS {
+    APIKEY = "/", 
+    PARTITION = "/partition",
+    DASHBOARD = "/dashboard",
 }
 
 export const BACKEND_ENDPOINTS = {
