@@ -1,0 +1,29 @@
+/* Flexbox */
+.api-key-page-container,
+.api-key-page-input-wrapper{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+.api-key-page-input-wrapper{
+    background: var(--gradient-primary);
+    gap: 10px;
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+.api-key-page-input-wrapper > * { 
+    margin: 0;
+}
+
+.api-key-page-input-wrapper > input,
+.api-key-page-input-wrapper > button {
+    border-radius: var(--border-radius);
+    border: none;
+    padding: 5px;
+}
+.api-key-page-input-wrapper > button {
+    background-color: var(--hex-tertiary);
+}
