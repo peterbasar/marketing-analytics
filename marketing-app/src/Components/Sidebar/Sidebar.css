@@ -3,3 +3,8 @@
     height: 100vh;
     width: 50px;
 }
+.sidebar-link-button{
+    padding: 10px;
+    width: 30px;
+    aspect-ratio: 1;
+}
