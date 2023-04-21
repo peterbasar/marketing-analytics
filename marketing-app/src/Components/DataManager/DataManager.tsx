@@ -10,6 +10,8 @@ import getConversions from "./api/getConversions"
 import getSpend from "./api/getSpend"
 /* utils */
 import { getApiDateParam } from "./api/utils"
+/* Zustand */
+import { useDataManagerStore, useDataManagerStoreInterface } from "./DataManager.store"
 
 
 interface DataManagerInterface {
@@ -17,10 +19,25 @@ interface DataManagerInterface {
 }
 
 const DataManager = ({children}: DataManagerInterface) => {
+    /* Zustand */
+    const apiKey = useDataManagerStore((state) => state.apiKey);
+    const setSelectedPartition = useDataManagerStore((state) => state.setSelectedPartition);
+    const setPartitions = useDataManagerStore((state) => state.setPartitions);
+
     useEffect(() => {
-        // getListOfPartitions({xApiKey: "XXXXXXXXXXXXXX"}).then((partitions) => {
-        //     console.log("partitions:", partitions)
-        // });
+        getListOfPartitions({xApiKey: apiKey}).then((partitions) => {
+            if (partitions !== null) {
+                setPartitions(partitions)
+                if (partitions.length > 0){
+                    setSelectedPartition(partitions[0])
+                }else{
+                    setSelectedPartition(null)
+                }
+            }else{
+                setSelectedPartition(null)
+            }
+        });
+    }, [apiKey])
 
         // getListOfSources({
         //         xApiKey: "XXXXXXXXXXXXXX",
@@ -94,7 +111,7 @@ const DataManager = ({children}: DataManagerInterface) => {
         // }).then((spend) => {
         //     console.log("spend:", spend)
         // });
-    })
+    
 
     return <>{children}</>
 }

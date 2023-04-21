@@ -1,6 +1,6 @@
 import apiCall from "Utils/apiCall"
 import { getListOfPartitionsUrl } from "Components/DataManager/api/urlBuilder"
-import { partitionDataItemInterface } from "Components/DataManager/DataManager.interfaces"
+import { paritionInterface } from "Components/DataManager/DataManager.interfaces"
 
 
 interface getListOfPartitionsInterface {
@@ -9,7 +9,7 @@ interface getListOfPartitionsInterface {
     limit?: number,
 }
 
-const getListOfPartitions = async ({xApiKey, offset, limit}: getListOfPartitionsInterface): Promise<Array<partitionDataItemInterface> | null> => {
+const getListOfPartitions = async ({xApiKey, offset, limit}: getListOfPartitionsInterface): Promise<Array<paritionInterface> | null> => {
     let response = await apiCall({
         method: "GET",
         url: getListOfPartitionsUrl(),

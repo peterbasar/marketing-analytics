@@ -7,14 +7,14 @@ import {
 } from 'Components/DataManager/DataManager.interfaces'
 
 
-interface useDataManagerStoreInterface {
+export interface useDataManagerStoreInterface {
     apiKey: string,
     setApiKey: (value: string) => void,
 
     partitions: Array<paritionInterface>,
     setPartitions: (value: Array<paritionInterface>) => void,
-    selectedPartition: string,
-    setSelectedPartition: (value: string) => void,
+    selectedPartition: paritionInterface | null,
+    setSelectedPartition: (value: paritionInterface | null) => void,
 
     sources: Array<string>,
     setSources: (value: Array<string>) => void,
@@ -36,10 +36,10 @@ export const useDataManagerStore = create(persist<useDataManagerStoreInterface>(
             },
 
             partitions: [],
-            setPartitions(value) {
+            setPartitions: (value) => {
                 set({partitions: value})
             },
-            selectedPartition: "",
+            selectedPartition: null,
             setSelectedPartition(value) {
                 set({selectedPartition: value})
             },
