@@ -1,0 +1,5 @@
+.sidebar-wrapper{
+    background-color: var(--hex-secondary);
+    height: 100vh;
+    width: 50px;
+}
