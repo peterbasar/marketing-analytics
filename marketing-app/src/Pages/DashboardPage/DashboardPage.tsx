@@ -9,33 +9,26 @@ import BasicPageWrapper from "Components/BasicPageWrapper/BasicPageWrapper";
 import Card from "Components/Card/Card";
 import CardBox from "Components/CardBox/CardBox";
 import PartitionCard from "Components/PartitionCard/PartitionCard";
+import DashboardBar from "Pages/DashboardPage/Components/DashboardBar/DashboardBar";
 /* Zustand */
 import { useDataManagerStore } from "Components/DataManager/DataManager.store";
 
 
 const DashboardPage = () => {
-    const selectedPartition = useDataManagerStore((state) => state.selectedPartition)
-    const partitions = useDataManagerStore((state) => state.partitions)
-
-
     return (
         <BasicPageWrapper>
             <BasicContentWrapper heading="dasboard_page">
-                Dashboard page content
+                <Container  justifyContent="start" alignContent="start" alignItems="start" 
+                            flexDirection="column" flexGrow={100} width="100%">
+                    <DashboardBar />
+                    <div style={{
+                        backgroundColor: "blue",
+                        height: "700px",
+                        width: "inherit",
+                    }}>
 
-                <Container style={{
-                        backgroundColor: "gray",
-                        width: "100%",
-                        padding: "20px 0",
-                        borderRadius: "var(--border-radius)"
-                    }}
-                    justifyContent="start"
-                >
-                    <p style={{margin: "0 15px"}}>
-                        _partition_: {selectedPartition && selectedPartition.brand}
-                    </p>
+                    </div>
                 </Container>
-
             </BasicContentWrapper>
         </BasicPageWrapper>
     )
