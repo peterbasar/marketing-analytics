@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { FRONTEND_ENDPOINTS } from "config"
 /* Components */
 import BasicPageWrapper from "Components/BasicPageWrapper/BasicPageWrapper";
+import Container from "Components/Container/Container";
 /* Zustand */
 import { useDataManagerStore } from "Components/DataManager/DataManager.store"
 
@@ -28,11 +29,13 @@ const ApiKeyPage = () => {
 
     return (
         <BasicPageWrapper>
-            <div className="api-key-page-input-wrapper">
-                <p>Enter your API key</p>
-                <input value={input} onChange={handleInputChange}></input>
-                <button onClick={() => {handleClick()}}>Continue</button>
-            </div>
+            <Container style={{minHeight: "100vh"}}>
+                <div className="api-key-page-input-wrapper">
+                    <p>Enter your API key</p>
+                    <input value={input} onChange={handleInputChange}></input>
+                    <button onClick={() => {handleClick()}}>Continue</button>
+                </div>
+            </Container>
         </BasicPageWrapper>            
     )
 }

@@ -13,11 +13,9 @@ const BasicPageWrapper = ({children}: BasicPageWrapperInterface) => {
     return (
         <Container wrap="nowrap" justifyContent="start">
             <Sidebar />
-            <div style={{minHeight: "100vh"}}>
                 <Container flexGrow={100}>
                     {children}
                 </Container>
-            </div>
         </Container>
     )
 }
