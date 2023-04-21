@@ -23,7 +23,11 @@ const BasicContentWrapper = ({children, heading}: BasicContentWrapperInterface) 
                         style={{margin: "0", padding: contentGap}}
             >
                 { heading
-                    ? (<h1 style={{margin: `0 0 ${contentGap} 0`}}>{heading}</h1>)
+                    ? (
+                        <h1 style={{margin: `0 0 ${contentGap} 0`, wordWrap: "break-word"}}>
+                            {heading}
+                        </h1>
+                    )
                     : (<></>)
                 }
                 {children} 
