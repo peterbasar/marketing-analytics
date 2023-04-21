@@ -38,23 +38,26 @@ const Sidebar = () => {
     ]
 
     return (
-        <div className="sidebar-wrapper">
-            <Container alignContent="start">
-                {
-                    links.map((link) => {
-                        return (
-                            <div    key={link.url}
-                                    className="sidebar-link-button"
-                                    onClick={() => {link.onClick()}}
-                            >
-                                <link.icon fill="var(--hex-primary)"/>
-                            </div>
-                        )
-                    })
-                }
+        <>
+            <div className="sidebar-wrapper-placeholder" />
+            <div className="sidebar-wrapper">
+                <Container alignContent="start">
+                    {
+                        links.map((link) => {
+                            return (
+                                <div    key={link.url}
+                                        className="sidebar-link-button"
+                                        onClick={() => {link.onClick()}}
+                                >
+                                    <link.icon fill="var(--hex-primary)"/>
+                                </div>
+                            )
+                        })
+                    }
 
-            </Container>
-        </div>
+                </Container>
+            </div>
+        </>
     )
 }
 export default Sidebar
