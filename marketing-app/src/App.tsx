@@ -11,6 +11,10 @@ import DashboardPage from 'Pages/DashboardPage/DashboardPage';
 import DataManager from 'Components/DataManager/DataManager';
 /* Zustand */
 import { AppStore } from 'App.store';
+/* Initialize i18n */
+import { AVAILABLE_LANGUAGES } from 'i18n/resources';
+import i18n from 'i18n/i18n';
+i18n.changeLanguage(AVAILABLE_LANGUAGES['en-US']);
 
 
 function App() {

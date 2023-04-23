@@ -8,6 +8,7 @@ import BasicPageWrapper from "Components/BasicPageWrapper/BasicPageWrapper";
 import Container from "Components/Container/Container";
 /* Zustand */
 import { useDataManagerStore } from "Components/DataManager/DataManager.store"
+/* i18n */
 
 
 const ApiKeyPage = () => {

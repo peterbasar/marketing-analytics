@@ -1,6 +1,7 @@
 import React from "react";
 import "Pages/DashboardPage/DashboardPage.css"
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 /* Components */
 import Container from "Components/Container/Container";
 import Sidebar from "Components/Sidebar/Sidebar";
@@ -17,7 +18,11 @@ import PerformanceReportTable from "Components/Tables/PerformanceReportTable";
 import { useDataManagerStore } from "Components/DataManager/DataManager.store";
 
 
+
 const DashboardPage = () => {
+    /* i18n */
+    const { t } = useTranslation()
+
     const performanceReportData = useDataManagerStore((state) => state.performanceReportData)
 
 
@@ -49,7 +54,7 @@ const DashboardPage = () => {
                                 default: {row: 1,col: 1},
                             }}
                         >
-                            adasd
+                            {t("key")}
                         </DashboardItem>
                     </DashboardContainer>
                 </Container>
