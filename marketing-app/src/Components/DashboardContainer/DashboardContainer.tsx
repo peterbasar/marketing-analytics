@@ -38,6 +38,9 @@ const DashboardContainer = ({width, style, children}: DashboardContainerInterfac
         }
         window.addEventListener('resize', handleResize);
 
+        /* Call initially */
+        handleResize();
+
         /* Unmount */
         return( () => {
             window.removeEventListener('resize', handleResize)

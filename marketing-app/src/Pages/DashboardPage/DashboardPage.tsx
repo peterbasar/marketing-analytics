@@ -12,27 +12,35 @@ import PartitionCard from "Components/PartitionCard/PartitionCard";
 import DashboardBar from "Pages/DashboardPage/Components/DashboardBar/DashboardBar";
 import DashboardContainer from "Components/DashboardContainer/DashboardContainer";
 import DashboardItem from "Components/DashboardItem/DashboardItem"
+import PerformanceReportTable from "Components/Tables/PerformanceReportTable";
 /* Zustand */
 import { useDataManagerStore } from "Components/DataManager/DataManager.store";
 
 
 const DashboardPage = () => {
+    const performanceReportData = useDataManagerStore((state) => state.performanceReportData)
+
+
     return (
         <BasicPageWrapper>
             <BasicContentWrapper heading="dasboard_page">
-                <Container  justifyContent="start" alignContent="start" alignItems="start" 
+                <Container  justifyContent="start" alignContent="start" alignItems="stretch" 
                             flexDirection="column" flexGrow={100} width="100%">
                     <DashboardBar />
 
                     <DashboardContainer>
                         <DashboardItem
+                            heading="_performance_table_"
                             behavior={{
-                                lg: {row: 1,col: 4},
-                                md: {row: 1,col: 2},
-                                sm: {row: 1,col: 2},
-                                default: {row: 1,col: 1},
+                                lg: {row: 2,col: 4},
+                                md: {row: 2,col: 4},
+                                sm: {row: 2,col: 4},
+                                default: {row: 4,col: 4},
                             }}
-                        > </DashboardItem>
+                        >
+                            <PerformanceReportTable rows={performanceReportData} />
+                        </DashboardItem>
+
                         <DashboardItem
                             behavior={{
                                 lg: {row: 1,col: 1},
@@ -40,7 +48,9 @@ const DashboardPage = () => {
                                 sm: {row: 1,col: 1},
                                 default: {row: 1,col: 1},
                             }}
-                        > </DashboardItem>
+                        >
+                            adasd
+                        </DashboardItem>
                     </DashboardContainer>
                 </Container>
             </BasicContentWrapper>

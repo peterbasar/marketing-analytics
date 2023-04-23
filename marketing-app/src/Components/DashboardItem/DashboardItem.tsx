@@ -22,6 +22,7 @@ interface DasboardItemScreenBehaviorInterface extends Record<
 
 
 interface DashboardItemInterface {
+    heading?: string,
     behavior: DasboardItemScreenBehaviorInterface,
     margin?: string,
     style?: React.CSSProperties,
@@ -29,11 +30,12 @@ interface DashboardItemInterface {
 }
 
 
-const DashboardItem = ({behavior, margin, style, children}: DashboardItemInterface) => {
+const DashboardItem = ({heading, behavior, margin, style, children}: DashboardItemInterface) => {
     const theme = useContext(ThemeContext);
     const dashboardContainer = useContext(DashboardContext);
 
-    let useMargin: string = margin ? margin : "5px";
+    /* Perceived distance between items */
+    let useMargin: string = margin ? margin : "15px";
 
     /* Based on the current dashboard parent width -> choose grid behavior */
     console.log(getBreakId(dashboardContainer.dashboardWidth))
@@ -41,6 +43,11 @@ const DashboardItem = ({behavior, margin, style, children}: DashboardItemInterfa
         return getBreakId(dashboardContainer.dashboardWidth)
     }, [dashboardContainer])
     console.log("current breakId:", breakId)
+
+    /* Heading and content style settings */
+    const headingMargin = 15
+    const headingHeight = 20
+    const contentHeight = heading ? `calc(100% - ${2*headingMargin + headingHeight}px)` : "100%"
 
     return (
         <div className="dashboard-item-outer-wrapper" style={{
@@ -51,7 +58,15 @@ const DashboardItem = ({behavior, margin, style, children}: DashboardItemInterfa
             <div    className="dashboard-item-inner-wrapper"
                     style={{margin: useMargin}}
             >
-                {children}
+                <Container wrap="nowrap" alignItems="stretch" flexDirection="column" style={{overflow: "hidden"}}>
+                    { heading 
+                        ? (<h2 style={{height: `${headingHeight}px`, margin: `${headingMargin}px`,}}>{heading}</h2>)
+                        : (<></>)
+                    }
+                    <div style={{height: contentHeight}}>
+                        {children}
+                    </div>
+                </Container>
             </div>
         </div>
     )
