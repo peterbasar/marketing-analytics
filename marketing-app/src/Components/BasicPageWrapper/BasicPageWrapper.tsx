@@ -11,7 +11,7 @@ interface BasicPageWrapperInterface {
 
 const BasicPageWrapper = ({children}: BasicPageWrapperInterface) => {
     return (
-        <Container wrap="nowrap" justifyContent="start" alignItems="start">
+        <Container wrap="nowrap" justifyContent="start" alignItems="flex-start">
             <Sidebar />
             <Container flexGrow={100}>
                 {children}

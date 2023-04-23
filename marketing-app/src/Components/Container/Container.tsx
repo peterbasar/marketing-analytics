@@ -5,9 +5,9 @@ import "Components/Container/Container.css"
 interface ContainerInterface {
     wrap?: "wrap" | "nowrap",
     flexDirection?: "row" | "row-reverse" | "column" | "column-reverse",
-    justifyContent?: "start" | "center" | "space-between" | "space-around" | "space-evenly",
+    justifyContent?: "start" | "center" | "space-between" | "space-around" | "space-evenly" | "flex-start" | "flex-end" | "left" | "right",
     flexGrow?: number | "inherit" | "initial" | "revert" | "revert-layer" | "unset",
-    alignItems?: "stretch" | "center" | "start" | "end",
+    alignItems?: "stretch" | "baseline" | "center" | "flex-end" | "flex-start",
     alignContent?: "start" | "center" | "space-between" | "space-around",
     width?: string,
     className?: "string",
