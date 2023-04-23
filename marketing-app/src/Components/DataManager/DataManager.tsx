@@ -21,10 +21,14 @@ interface DataManagerInterface {
 const DataManager = ({children}: DataManagerInterface) => {
     /* Zustand */
     const apiKey = useDataManagerStore((state) => state.apiKey);
+    const selectedPartition = useDataManagerStore((state) => state.selectedPartition);
     const setSelectedPartition = useDataManagerStore((state) => state.setSelectedPartition);
     const setPartitions = useDataManagerStore((state) => state.setPartitions);
+    const setPerformanceReportData = useDataManagerStore((state) => state.setPerformanceReportData);
 
-    useEffect(() => {
+
+    /* Request list of partitions on each apiKey change and on load */
+    useEffect(() => {    
         getListOfPartitions({xApiKey: apiKey}).then((partitions) => {
             if (partitions !== null) {
                 setPartitions(partitions)
@@ -34,10 +38,33 @@ const DataManager = ({children}: DataManagerInterface) => {
                     setSelectedPartition(null)
                 }
             }else{
-                setSelectedPartition(null)
+                setSelectedPartition(null);
+                setPartitions([]);
             }
         });
-    }, [apiKey])
+    }, [apiKey]);
+
+
+    /* Request performance report on each selected parition change and on load if selected parition exists */
+    useEffect(() => {    
+        if (selectedPartition) {
+            getPerformanceReport({
+                xApiKey: apiKey,
+                partitionId: selectedPartition.id,
+                fromDate: getApiDateParam({year: 2022, month: 1, day: 1}),
+                toDate: getApiDateParam({year: 2022, month: 12, day: 31}),
+                optimisationTarget: "revenue",
+            }).then((report) => {
+                if (report){
+                    setPerformanceReportData(report);
+                }
+            });    
+        }else{
+            setPerformanceReportData([]);
+        }
+    }, [selectedPartition]);
+
+
 
         // getListOfSources({
         //         xApiKey: "XXXXXXXXXXXXXX",
