@@ -1,0 +1,8 @@
+.dashboard-item-outer-wrapper{
+    display: flex;
+}
+.dashboard-item-inner-wrapper{
+    flex-grow: 100;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--hex-secondary);
+}
