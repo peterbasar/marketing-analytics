@@ -49,7 +49,7 @@ const Sidebar = () => {
                                         className="sidebar-link-button"
                                         onClick={() => {link.onClick()}}
                                 >
-                                    <link.icon fill="var(--hex-primary)"/>
+                                    <link.icon fill="var(--hex-secondary)"/>
                                 </div>
                             )
                         })

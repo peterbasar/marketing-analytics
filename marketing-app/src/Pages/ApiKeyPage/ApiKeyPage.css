@@ -7,8 +7,9 @@
 	align-content: center;
 }
 .api-key-page-input-wrapper{
-    background: var(--hex-secondary);
-    color: var(--hex-primary);
+    background: var(--hex-primary);
+    border: 1px solid var(--hex-secondary);
+    color: var(--hex-secondary);
     gap: 10px;
     padding: 20px;
     border-radius: var(--border-radius);
@@ -19,8 +20,8 @@
 
 .api-key-page-input-wrapper > input,
 .api-key-page-input-wrapper > button {
+    border: 1px solid var(--hex-secondary);
     border-radius: var(--border-radius);
-    border: none;
     padding: 5px;
 }
 .api-key-page-input-wrapper > button {

@@ -21,7 +21,7 @@ const PartitionCard = ({brand, country, id, onClick}: PartitionCardInterface) =>
                     width: "inherit",
                     display: "flex",
                     marginBottom: "5px",
-                    color: "var(--hex-primary)"}}>
+                    color: "var(--hex-secondary)"}}>
                 <p style={{margin: "0"}}>{key}:&nbsp;</p>
                 <p style={{margin: "0", overflow: "hidden", textOverflow: "ellipsis",}}>
                     {value}
@@ -33,7 +33,7 @@ const PartitionCard = ({brand, country, id, onClick}: PartitionCardInterface) =>
     return (
         <Card   width="200px" padding="20px"
                 style={{
-                    background: "var(--hex-secondary)"
+                    border: "1px solid var(--hex-secondary)",
                 }}
         >
             {/* Brand */}
@@ -45,11 +45,10 @@ const PartitionCard = ({brand, country, id, onClick}: PartitionCardInterface) =>
             
             <button style={{
                         marginTop: "5px",
-                        border: "none",
                         padding: "10px",
                         borderRadius: "var(--border-radius)",
-                        backgroundColor: "var(--hex-primary)",
-                        color: "var(--hex-secondary)"
+                        border: "1px solid var(--hex-secondary)",
+                        color: "var(--hex-secondary)",
                     }}
                     onClick={() => {onClick && onClick()}}
             >

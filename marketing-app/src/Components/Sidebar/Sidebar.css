@@ -4,7 +4,8 @@
     width: 50px;
 }
 .sidebar-wrapper{
-    background-color: var(--hex-secondary);
+    background-color: var(--hex-primary);
+    border-right: 1px solid var(--hex-secondary);
     position: fixed;
     left: 0;
 }

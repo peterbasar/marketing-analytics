@@ -24,7 +24,6 @@ const Card = ({padding, aspectRatio, width, style, children}: CardInterface) => 
             aspectRatio: aspectRatio ? `${aspectRatio}` : "1",
             borderRadius: "var(--border-radius)",
             padding: usePadding,
-            backgroundColor: "var(--hex-secondary)",
             ...style,
         }}>
             {children}
