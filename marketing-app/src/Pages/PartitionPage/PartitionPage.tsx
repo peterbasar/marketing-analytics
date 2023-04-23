@@ -26,7 +26,7 @@ const PartitionPage = () => {
         <BasicPageWrapper>
             <BasicContentWrapper heading="partition_page_heading">
                 <CardBox>
-                    {   paritions.map((item) => {
+                    {   paritions && paritions.map((item) => {
                             return (
                                 <PartitionCard
                                     key={item.id}
