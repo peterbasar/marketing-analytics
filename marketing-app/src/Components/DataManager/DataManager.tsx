@@ -49,25 +49,25 @@ const DataManager = ({children}: DataManagerInterface) => {
     }, [apiKey]);
 
 
-    /*  Request performance report on each selected parition change and on load if 
-        selected parition exists */
+    /*  Request performance report on (selected partition change, date range change) change and on 
+        load if selected parition and date range exists */
     useEffect(() => {    
-        if (selectedPartition) {
+        if (selectedPartition && dateRangeStart && dateRangeEnd) {
             getPerformanceReport({
                 xApiKey: apiKey,
                 partitionId: selectedPartition.id,
-                fromDate: getApiDateParam({year: 2022, month: 1, day: 1}),
-                toDate: getApiDateParam({year: 2022, month: 12, day: 31}),
+                fromDate: dateRangeStart,
+                toDate: dateRangeEnd,
                 optimisationTarget: "revenue",
             }).then((report) => {
-                if (report){
+                if (report !== null){
                     setPerformanceReportData(report);
+                }else{
+                    setPerformanceReportData([]);
                 }
             });    
-        }else{
-            setPerformanceReportData([]);
         }
-    }, [selectedPartition]);
+    }, [selectedPartition, dateRangeStart, dateRangeEnd]);
 
 
     /*  Reset date range picker values if selected partition changes -> ignore initial load update
