@@ -29,11 +29,9 @@ const DashboardContainer = ({width, style, children}: DashboardContainerInterfac
     const dashboardRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        console.log("dashboardRef:", dashboardRef)
         const handleResize = () => {
             if (dashboardRef && dashboardRef.current){
                 setDashboardWidth(dashboardRef.current.offsetWidth);
-                console.log(dashboardRef.current.offsetWidth);
             }
         }
         window.addEventListener('resize', handleResize);

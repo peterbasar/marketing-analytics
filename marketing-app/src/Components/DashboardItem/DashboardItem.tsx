@@ -38,11 +38,9 @@ const DashboardItem = ({heading, behavior, margin, style, children}: DashboardIt
     let useMargin: string = margin ? margin : "15px";
 
     /* Based on the current dashboard parent width -> choose grid behavior */
-    console.log(getBreakId(dashboardContainer.dashboardWidth))
     const breakId = useMemo(() => {
         return getBreakId(dashboardContainer.dashboardWidth)
     }, [dashboardContainer])
-    console.log("current breakId:", breakId)
 
     /* Heading and content style settings */
     const headingMargin = 15

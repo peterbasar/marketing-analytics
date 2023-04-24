@@ -24,7 +24,6 @@ function App() {
   useEffect(() => {
     setActiveEndpoint(window.location.pathname)
     window.scrollTo(0, 0)
-    console.log("window.location.pathname:", window.location.pathname)
   }, [location, setActiveEndpoint])
   
 
