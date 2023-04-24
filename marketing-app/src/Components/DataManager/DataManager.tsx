@@ -29,6 +29,9 @@ const DataManager = ({children}: DataManagerInterface) => {
     const dateRangeStart = useDataManagerStore((state) => state.dateRangeStart);
     const dateRangeEnd = useDataManagerStore((state) => state.dateRangeEnd);
     const setDateRangeWithDate = useDataManagerStore((state) => state.setDateRangeWithDate);
+    const performanceReportData = useDataManagerStore((state) => state.performanceReportData);
+    const selectedSources = useDataManagerStore((state) => state.selectedSources);
+    const setSelectedSources = useDataManagerStore((state) => state.setSelectedSources);
 
 
     /* Request list of partitions on each apiKey change and on load */
@@ -89,25 +92,39 @@ const DataManager = ({children}: DataManagerInterface) => {
     }, [selectedPartition]);
 
 
-    /*  On selected partition change, request partition data for the past year. */
-    useEffect(() => {    
-        if (selectedPartition) {
-            getPartitionData({
-                xApiKey: apiKey,
-                partitionId: selectedPartition.id,
-                fromDate: getApiDateParam({year: 2022, month: 1, day: 1}),
-                toDate: getApiDateParam({year: 2022, month: 12, day: 31}),
-                optimisationTarget: "conversions",
-                source: "direct",
-                offset: 0,
-                limit: -1,
-            }).then((data) => {
-                // console.log("partition data:", data)
-            });  
-        }else{
-            setPerformanceReportData([]);
+    /*  Reset selected sources if new performance report data changes
+        -> ignore initial load update unless selected sources are empty */
+    const selectedSourcesInitialPageLoad = useRef<boolean>(true);
+    useEffect(() => {
+        if (selectedSourcesInitialPageLoad.current === false || selectedSources.length === 0){
+            /* Create Date Objects for present date and 1 year old date  */
+            setSelectedSources(performanceReportData.map((item) => item.source))
         }
-    }, [selectedPartition]);
+        /* Initial page load will permanently set 'selectedSourcesInitialPageLoad' ref to false */
+    }, [performanceReportData]);
+
+    
+
+    // /*  On selected partition change, request partition data for the past year. */
+    // useEffect(() => {    
+    //     if (selectedPartition) {
+    //         getPartitionData({
+    //             xApiKey: apiKey,
+    //             partitionId: selectedPartition.id,
+    //             fromDate: getApiDateParam({year: 2022, month: 1, day: 1}),
+    //             toDate: getApiDateParam({year: 2022, month: 12, day: 31}),
+    //             optimisationTarget: "conversions",
+    //             source: "direct",
+    //             offset: 0,
+    //             limit: -1,
+    //         }).then((data) => {
+    //             // console.log("partition data:", data)
+    //         });  
+    //     }else{
+    //         setPerformanceReportData([]);
+    //     }
+    // }, [selectedPartition]);
+
 
 
         // getListOfSources({
