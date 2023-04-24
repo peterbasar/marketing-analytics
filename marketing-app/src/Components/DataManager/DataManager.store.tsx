@@ -4,6 +4,7 @@ import {
     paritionInterface,
     partitionDataItemInterface,
     performanceReportItemInterface,
+    revenueSpendDataItemInterface,
 } from 'Components/DataManager/DataManager.interfaces'
 
 
@@ -33,6 +34,11 @@ export interface useDataManagerStoreInterface {
         year: number, month: number, day: number
     ) => void,
 
+    getRevenueSpendData: () => Array<revenueSpendDataItemInterface>,
+
+    selectedSources: Array<performanceReportItemInterface["source"]>,
+    setSelectedSources: (value: Array<performanceReportItemInterface["source"]>) => void,
+    toggleSources: (value: Array<performanceReportItemInterface["source"]>) => void,
 }
 
 
@@ -76,6 +82,42 @@ export const useDataManagerStore = create(persist<useDataManagerStoreInterface>(
             setDateRangeWithValues(type, year, month, day) {
                 set({[type]: `${year}-${month}-${day}`})
             },
+            
+            /* x - spend, y - revenue */
+            getRevenueSpendData(){
+                const performanceReportDataTemp = get().performanceReportData
+                let revenueSpendData: Array<revenueSpendDataItemInterface> = []
+                performanceReportDataTemp.forEach((item) => {
+                    revenueSpendData.push({
+                        source: item.source,
+                        spend: item.spend,
+                        revenue: item.revenue,
+                    })
+                });
+                return revenueSpendData
+            },
+
+            selectedSources: [],
+            setSelectedSources(value){
+                set({selectedSources: value})
+            },
+            toggleSources(value){
+                /*  If exists in selectedSources -> ignore in filter, remember item. */
+                let foundDuringFilter: Array<string> = []
+                let newSelectedSources = get().selectedSources.filter((source) => {
+                    if (source in value){
+                        foundDuringFilter.push(source)
+                        return false
+                    }
+                })
+                /* Append those sources that werent present before but are now toggled */
+                newSelectedSources.push(...value.filter((source) => {
+                    return !(source in foundDuringFilter)
+                }))
+                set({selectedSources: newSelectedSources})
+            }
+
+
         }
     )),
     {

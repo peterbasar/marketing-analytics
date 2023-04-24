@@ -41,3 +41,9 @@ export interface conversionsInterface {
 export interface spendInterface {
   spend: number
 }
+
+export interface revenueSpendDataItemInterface {
+  revenue: performanceReportItemInterface["revenue"],
+  spend: performanceReportItemInterface["spend"],
+  source: performanceReportItemInterface["source"],
+}
