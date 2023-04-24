@@ -3,6 +3,8 @@ import React, { useContext } from "react"
 import Container from "Components/Container/Container"
 import { ThemeContext } from "Theme/Theme"
 import Card from "Components/Card/Card"
+/* i18n */
+import { useTranslation } from "react-i18next"
 
 
 interface PartitionCardInterface {
@@ -13,6 +15,9 @@ interface PartitionCardInterface {
 }
 
 const PartitionCard = ({brand, country, id, onClick}: PartitionCardInterface) => {
+    /* i18n */
+    const { t } = useTranslation()
+
     const theme = useContext(ThemeContext);
 
     const keyValue = (key: string, value: string) => {
@@ -37,11 +42,11 @@ const PartitionCard = ({brand, country, id, onClick}: PartitionCardInterface) =>
                 }}
         >
             {/* Brand */}
-            {keyValue("_brand_", brand)}
+            {keyValue(t("brand"), brand)}
             {/* Id */}
-            {keyValue("_id_", id)}
+            {keyValue(t("id"), id)}
             {/* Country */}
-            {keyValue("_contry_", country)}
+            {keyValue(t("country"), country)}
             
             <button style={{
                         marginTop: "5px",
@@ -52,7 +57,7 @@ const PartitionCard = ({brand, country, id, onClick}: PartitionCardInterface) =>
                     }}
                     onClick={() => {onClick && onClick()}}
             >
-                _select_
+                {t("select")}
             </button>
         </Card>
     )

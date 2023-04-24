@@ -18,24 +18,24 @@ import PerformanceReportTable from "Components/Tables/PerformanceReportTable";
 import { useDataManagerStore } from "Components/DataManager/DataManager.store";
 
 
-
 const DashboardPage = () => {
     /* i18n */
     const { t } = useTranslation()
-
+    /* Zustand */
     const performanceReportData = useDataManagerStore((state) => state.performanceReportData)
+    const selectedPartition = useDataManagerStore((state) => state.selectedPartition)
 
 
     return (
         <BasicPageWrapper>
-            <BasicContentWrapper heading="dasboard_page">
+            <BasicContentWrapper heading={`${t("dashboard_page_heading")} - ${selectedPartition?.brand}`}>
                 <Container  justifyContent="start" alignContent="start" alignItems="stretch" 
                             flexDirection="column" flexGrow={100} width="100%">
                     <DashboardBar />
 
                     <DashboardContainer>
                         <DashboardItem
-                            heading="_performance_table_"
+                            heading={`${t("performance_report_table")}`}
                             behavior={{
                                 lg: {row: 2,col: 4},
                                 md: {row: 2,col: 4},
@@ -54,7 +54,7 @@ const DashboardPage = () => {
                                 default: {row: 1,col: 1},
                             }}
                         >
-                            {t("key")}
+                            asd
                         </DashboardItem>
                     </DashboardContainer>
                 </Container>

@@ -13,9 +13,14 @@ import PartitionCard from "Components/PartitionCard/PartitionCard";
 import { FRONTEND_ENDPOINTS } from "config";
 /* Zustand */
 import { useDataManagerStore } from "Components/DataManager/DataManager.store";
+/* i18n */
+import { useTranslation } from "react-i18next";
 
 
 const PartitionPage = () => {
+    /* i18n */
+    const { t } = useTranslation()
+
     /* Zustand */
     const navigate = useNavigate();
     const paritions = useDataManagerStore((state) => state.partitions)
@@ -24,7 +29,7 @@ const PartitionPage = () => {
 
     return (
         <BasicPageWrapper>
-            <BasicContentWrapper heading="partition_page_heading">
+            <BasicContentWrapper heading={`${t("partition_page_heading")}`}>
                 <CardBox>
                     {   paritions && paritions.map((item) => {
                             return (

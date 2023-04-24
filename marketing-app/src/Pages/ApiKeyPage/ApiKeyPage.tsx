@@ -9,9 +9,13 @@ import Container from "Components/Container/Container";
 /* Zustand */
 import { useDataManagerStore } from "Components/DataManager/DataManager.store"
 /* i18n */
+import { useTranslation } from "react-i18next";
 
 
 const ApiKeyPage = () => {
+    /* i18n */
+    const { t } = useTranslation()
+    
     const apiKey = useDataManagerStore((state) => state.apiKey);
     const setApiKey = useDataManagerStore((state) => state.setApiKey);
 
@@ -32,9 +36,9 @@ const ApiKeyPage = () => {
         <BasicPageWrapper>
             <Container style={{minHeight: "100vh"}}>
                 <div className="api-key-page-input-wrapper">
-                    <p>Enter your API key</p>
+                    <p>{t("enter_your_api_key")}</p>
                     <input value={input} onChange={handleInputChange}></input>
-                    <button onClick={() => {handleClick()}}>Continue</button>
+                    <button onClick={() => {handleClick()}}>{t("continue")}</button>
                 </div>
             </Container>
         </BasicPageWrapper>            
