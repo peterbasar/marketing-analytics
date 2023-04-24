@@ -14,6 +14,7 @@ import DashboardBar from "Pages/DashboardPage/Components/DashboardBar/DashboardB
 import DashboardContainer from "Components/DashboardContainer/DashboardContainer";
 import DashboardItem from "Components/DashboardItem/DashboardItem"
 import PerformanceReportTable from "Components/Tables/PerformanceReportTable";
+import RevenueSpendBarChart from "Components/Charts/RevenueSpendBarChart/RevenueSpendBarChart";
 /* Zustand */
 import { useDataManagerStore } from "Components/DataManager/DataManager.store";
 
@@ -22,7 +23,6 @@ const DashboardPage = () => {
     /* i18n */
     const { t } = useTranslation()
     /* Zustand */
-    const performanceReportData = useDataManagerStore((state) => state.performanceReportData)
     const selectedPartition = useDataManagerStore((state) => state.selectedPartition)
 
 
@@ -43,18 +43,19 @@ const DashboardPage = () => {
                                 default: {row: 4,col: 4},
                             }}
                         >
-                            <PerformanceReportTable rows={performanceReportData} />
+                            <PerformanceReportTable />
                         </DashboardItem>
 
                         <DashboardItem
+                            heading={`${t("spending_and_revenue_chart_heading")}`}
                             behavior={{
-                                lg: {row: 1,col: 1},
-                                md: {row: 1,col: 1},
-                                sm: {row: 1,col: 1},
-                                default: {row: 1,col: 1},
+                                lg: {row: 1,col: 4},
+                                md: {row: 2,col: 4},
+                                sm: {row: 2,col: 4},
+                                default: {row: 2,col: 4},
                             }}
                         >
-                            asd
+                            <RevenueSpendBarChart />
                         </DashboardItem>
                     </DashboardContainer>
                 </Container>
