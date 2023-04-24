@@ -12,6 +12,7 @@ export const translations = {
         select: "Select",
         
         performance_report_table: "Performance report",
+        spending_and_revenue_chart_heading: "Spending & Revenue",
         partition: "Partition",
 
         date_range: "Date range",
@@ -45,5 +46,9 @@ export const translations = {
         paidsocial_retargeting: "Paid social - retargeting",
         radio: "Radio",
         tv: "Television",
+
+        /* Variables */
+        spend: "Spent",
+        revenue: "Revenue",
     }
 }

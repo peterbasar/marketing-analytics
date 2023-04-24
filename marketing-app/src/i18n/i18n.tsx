@@ -8,7 +8,7 @@ i18n
   .init({
     lng: AVAILABLE_LANGUAGES['en-US'], // default language
     fallbackLng: AVAILABLE_LANGUAGES['en-US'],
-    debug: true,
+    debug: false,
     resources: I18N_RESOURCES,
   }
 );
