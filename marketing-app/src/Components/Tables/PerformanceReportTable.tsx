@@ -5,16 +5,18 @@ import { performanceReportItemInterface } from "Components/DataManager/DataManag
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 /* i18n */
 import { useTranslation } from "react-i18next";
+/* Zustand */
+import { useDataManagerStore } from "Components/DataManager/DataManager.store";
 
 
-interface PerformanceReportTableInterface {
-  rows: Array<performanceReportItemInterface>,
-}
-
-const PerformanceReportTable = ({rows}: PerformanceReportTableInterface) => {
+const PerformanceReportTable = () => {
+  /* Zustand */
+  const performanceReportData = useDataManagerStore((state) => state.performanceReportData)
+  const selectedSources = useDataManagerStore((state) => state.selectedSources)
+  const toggleSources = useDataManagerStore((state) => state.toggleSources)
   /* i18n */
   const { t } = useTranslation()
-  
+
   const columns: GridColDef[] = [
     { field:  "source",
       headerName: t('column_source') as string,
@@ -46,13 +48,14 @@ const PerformanceReportTable = ({rows}: PerformanceReportTableInterface) => {
   ];
 
 
-
   return (
     <div style={{height: "100%", width: "100%"}}>
       <DataGrid
-        rows={rows}
+        rows={performanceReportData}
         columns={columns}
         getRowId={(row) => {return row.source}}
+        onRowSelectionModelChange={(model) => {toggleSources(model as string[])}}
+        rowSelectionModel={selectedSources}
         checkboxSelection
       />
     </div>
