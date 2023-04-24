@@ -5,6 +5,6 @@ export interface getApiDateParamInterface {
 }
 
 export const getApiDateParam = ({year, month, day}: getApiDateParamInterface): string => {
-    /* Return formatted time */
+    /* Return date in a format that is used in api request */
     return `${year}-${month}-${day}`
 }

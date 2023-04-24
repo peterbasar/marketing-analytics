@@ -24,6 +24,15 @@ export interface useDataManagerStoreInterface {
 
     performanceReportData: Array<performanceReportItemInterface>,
     setPerformanceReportData: (value: Array<performanceReportItemInterface>) => void,
+
+    dateRangeStart: string | null,
+    dateRangeEnd: string | null,
+    setDateRangeWithDate: (type: "dateRangeStart" | "dateRangeEnd", value: Date) => void,
+    setDateRangeWithValues: (
+        type: "dateRangeStart" | "dateRangeEnd",
+        year: number, month: number, day: number
+    ) => void,
+
 }
 
 
@@ -58,8 +67,17 @@ export const useDataManagerStore = create(persist<useDataManagerStoreInterface>(
             setPerformanceReportData(value) {
                 set({performanceReportData: value})
             },
-        })
-    ),
+
+            dateRangeStart: null,
+            dateRangeEnd: null,
+            setDateRangeWithDate(type, value) {
+                set({[type]: `${value.getFullYear()}-${value.getMonth() + 1}-${value.getDate()}`})
+            },
+            setDateRangeWithValues(type, year, month, day) {
+                set({[type]: `${year}-${month}-${day}`})
+            },
+        }
+    )),
     {
         name: 'useDataManagerStore', // unique name
         storage: createJSONStorage(() => localStorage),
