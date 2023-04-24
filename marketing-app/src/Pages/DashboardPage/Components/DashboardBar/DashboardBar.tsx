@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
+import "Pages/DashboardPage/Components/DashboardBar/DashboardBar.css"
 import dayjs from 'dayjs';
 /* Components */
 import Container from "Components/Container/Container";
@@ -17,8 +18,6 @@ const DashboardBar = () => {
     const { t } = useTranslation()
 
     /* Zustand */
-    const selectedPartition = useDataManagerStore((state) => state.selectedPartition)
-    const partitions = useDataManagerStore((state) => state.partitions)
     const dateRangeStart = useDataManagerStore((state) => state.dateRangeStart)
     const dateRangeEnd = useDataManagerStore((state) => state.dateRangeEnd)
     const setDateRangeWithValues = useDataManagerStore((state) => state.setDateRangeWithValues)
@@ -29,15 +28,12 @@ const DashboardBar = () => {
                 borderRadius: "var(--border-radius)",
                 outline: "1px solid var(--hex-secondary)",
                 width: "inherit",
-                padding: "20px 20px",
+                gap: "20px",
             }}
-                justifyContent="start"
+                justifyContent="center"
             >
-                <p style={{margin: "10px"}}>
-                    {t("date_range")}:
-                </p>
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
-                    <div style={{margin: "10px"}}>
+                    <div className="dashboard-bar-item">
                         <DatePicker label={t("date_range_start")} value={dayjs(dateRangeStart)} 
                             maxDate={dayjs(dateRangeEnd)}
                             onChange={(e) => {
@@ -51,7 +47,7 @@ const DashboardBar = () => {
                         />
                     </div>
                     
-                    <div style={{margin: "10px"}}>
+                    <div className="dashboard-bar-item">
                         <DatePicker label={t("date_range_end")} value={dayjs(dateRangeEnd)} 
                             minDate={dayjs(dateRangeStart)}
                             onChange={(e) => {
@@ -64,27 +60,6 @@ const DashboardBar = () => {
                             }} 
                         />
                     </div>
-                    
-
-                    {/* <DateRangePicker
-                        defaultValue={[dayjs(dateRangeStart), dayjs(dateRangeEnd)]}
-                        onChange={(e) => {
-                            if (e[0] && e[1]){
-                                setDateRangeWithValues(
-                                    "dateRangeStart",
-                                    e[0].year(), e[0].month()+1, e[0].date()
-                                )
-                                setDateRangeWithValues(
-                                    "dateRangeEnd",
-                                    e[1].year(), e[1].month()+1, e[1].date()
-                                )
-                            }
-                        }}
-                        localeText={{
-                            start: "",
-                            end: "",
-                        }}
-                    /> */}
                 </LocalizationProvider>
             </Container>
         </>
