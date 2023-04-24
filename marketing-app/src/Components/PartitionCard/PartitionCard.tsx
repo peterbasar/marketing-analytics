@@ -49,13 +49,14 @@ const PartitionCard = ({brand, country, id, onClick}: PartitionCardInterface) =>
             {keyValue(t("country"), country)}
             
             <button style={{
-                        marginTop: "5px",
-                        padding: "10px",
-                        borderRadius: "var(--border-radius)",
-                        border: "1px solid var(--hex-secondary)",
-                        color: "var(--hex-secondary)",
-                    }}
-                    onClick={() => {onClick && onClick()}}
+                    marginTop: "5px",
+                    padding: "10px",
+                    borderRadius: "var(--border-radius)",
+                    border: "1px solid var(--hex-secondary)",
+                    color: "var(--hex-secondary)",
+                    backgroundColor: "var(--hex-primary)"
+                }}
+                onClick={() => {onClick && onClick()}}
             >
                 {t("select")}
             </button>
