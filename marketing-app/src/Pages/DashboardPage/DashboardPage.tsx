@@ -34,7 +34,7 @@ const DashboardPage = () => {
     return (
         <BasicPageWrapper>
             <BasicContentWrapper heading={`${t("dashboard_page_heading")} - ${selectedPartition?.brand}`}>
-                <Container  justifyContent="start" alignContent="start" alignItems="stretch" 
+                <Container  justifyContent="start" alignContent="flex-start" alignItems="stretch" 
                             flexDirection="column" flexGrow={100} width="100%">
                     <DatetimeRangeBar />
 
@@ -46,7 +46,7 @@ const DashboardPage = () => {
                                 lg: {row: 2,col: 4},
                                 md: {row: 2,col: 4},
                                 sm: {row: 2,col: 4},
-                                default: {row: 4,col: 4},
+                                default: {row: 6,col: 4},
                             }}
                         >
                             <PerformanceReportTable />
@@ -158,7 +158,7 @@ const DashboardPage = () => {
                                 lg: {row: selectedPerformanceReportData.length > 6 ? 4 : 2, col: 4},
                                 md: {row: selectedPerformanceReportData.length > 6 ? 4 : 2, col: 4},
                                 sm: {row: selectedPerformanceReportData.length > 6 ? 6 : 2, col: 4},
-                                default: {row: selectedPerformanceReportData.length > 6 ? 10 : 2, col: 4},
+                                default: {row: selectedPerformanceReportData.length > 6 ? 10 : 5, col: 4},
                             }}
                         >
                             <ConversionsSankeyChart />

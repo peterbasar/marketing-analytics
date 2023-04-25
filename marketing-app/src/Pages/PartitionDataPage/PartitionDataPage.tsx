@@ -34,7 +34,7 @@ const PartitionDataPage = () => {
     return (
         <BasicPageWrapper>
             <BasicContentWrapper heading={`${t("partition_data_page_heading")} - ${selectedPartition?.brand}`}>
-                <Container  justifyContent="start" alignContent="start" alignItems="stretch" 
+                <Container  justifyContent="start" alignContent="flex-start" alignItems="stretch" 
                             flexDirection="column" flexGrow={100} width="100%">
 
                     <DatetimeRangeBar />
@@ -47,7 +47,7 @@ const PartitionDataPage = () => {
                                 lg: {row: 2,col: 4},
                                 md: {row: 2,col: 4},
                                 sm: {row: 3,col: 4},
-                                default: {row: 4,col: 4},
+                                default: {row: 6,col: 4},
                             }}
                         >
                             <PartitionDataTable />
