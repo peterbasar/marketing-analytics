@@ -1,4 +1,5 @@
 import React, { useContext } from "react"
+import "Components/PartitionCard/PartitionCard.css"
 /* Components */
 import Container from "Components/Container/Container"
 import { ThemeContext } from "Theme/Theme"
@@ -11,10 +12,11 @@ interface PartitionCardInterface {
     brand: string,
     country: string,
     id: string,
+    selected: boolean,
     onClick?: () => void,
 }
 
-const PartitionCard = ({brand, country, id, onClick}: PartitionCardInterface) => {
+const PartitionCard = ({brand, country, id, selected, onClick}: PartitionCardInterface) => {
     /* i18n */
     const { t } = useTranslation()
 
@@ -27,7 +29,7 @@ const PartitionCard = ({brand, country, id, onClick}: PartitionCardInterface) =>
                     display: "flex",
                     marginBottom: "5px",
                     color: "var(--hex-secondary)"}}>
-                <p style={{margin: "0"}}>{key}:&nbsp;</p>
+                <p style={{margin: "0"}}><b>{key}:&nbsp;</b></p>
                 <p style={{margin: "0", overflow: "hidden", textOverflow: "ellipsis",}}>
                     {value}
                 </p>
@@ -38,7 +40,7 @@ const PartitionCard = ({brand, country, id, onClick}: PartitionCardInterface) =>
     return (
         <Card   width="200px" padding="20px"
                 style={{
-                    border: "1px solid var(--hex-secondary)",
+                    border: `1px solid var(--hex-secondary)`,
                 }}
         >
             {/* Brand */}
@@ -48,17 +50,7 @@ const PartitionCard = ({brand, country, id, onClick}: PartitionCardInterface) =>
             {/* Country */}
             {keyValue(t("country"), country)}
             
-            <button style={{
-                    marginTop: "5px",
-                    padding: "10px",
-                    borderRadius: "var(--border-radius)",
-                    border: "1px solid var(--hex-secondary)",
-                    color: "var(--hex-secondary)",
-                    backgroundColor: "var(--hex-primary)",
-                    cursor: "pointer",
-                }}
-                onClick={() => {onClick && onClick()}}
-            >
+            <button className="partition-card-select-button" onClick={() => {onClick && onClick()}}>
                 {t("select")}
             </button>
         </Card>

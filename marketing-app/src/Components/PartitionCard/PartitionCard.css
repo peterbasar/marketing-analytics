@@ -1,0 +1,14 @@
+.partition-card-select-button{
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--hex-secondary);
+    color: var(--hex-secondary);
+    background-color: var(--hex-primary);
+    cursor: pointer;
+}
+
+.partition-card-select-button:hover {
+    color: var(--hex-primary);
+    background-color: var(--hex-secondary);
+}
