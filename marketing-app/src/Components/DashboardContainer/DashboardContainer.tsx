@@ -58,7 +58,7 @@ const DashboardContainer = ({width, style, children}: DashboardContainerInterfac
                     // Grid 
                     display: "grid",
                     gridTemplateColumns: "repeat(4, 1fr)",
-                    gridAutoRows: "1fr",
+                    gridAutoRows: "auto",
                 }}
             >
                 {children}    
