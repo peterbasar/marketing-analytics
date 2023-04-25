@@ -22,10 +22,15 @@
 .api-key-page-input-wrapper > button {
     border: 1px solid var(--hex-secondary);
     border-radius: var(--border-radius);
-    padding: 5px;
+    padding: 10px;
 }
 .api-key-page-input-wrapper > button {
     cursor: pointer;
     color: var(--hex-secondary);
     background-color: var(--hex-primary);
+}
+
+.api-key-page-input-wrapper > button:hover {
+    color: var(--hex-primary);
+    background-color: var(--hex-secondary);
 }

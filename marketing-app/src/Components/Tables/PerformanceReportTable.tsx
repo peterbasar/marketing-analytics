@@ -20,7 +20,7 @@ const PerformanceReportTable = () => {
   const columns: GridColDef[] = [
     { field:  "source",
       headerName: t('column_source') as string,
-      width: 340,
+      width: 240,
       type: "number",
       valueGetter: (params: GridValueGetterParams) =>
       t(params.row.source),

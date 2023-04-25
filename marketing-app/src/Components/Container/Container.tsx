@@ -8,7 +8,7 @@ interface ContainerInterface {
     justifyContent?: "start" | "center" | "space-between" | "space-around" | "space-evenly" | "flex-start" | "flex-end" | "left" | "right",
     flexGrow?: number | "inherit" | "initial" | "revert" | "revert-layer" | "unset",
     alignItems?: "stretch" | "baseline" | "center" | "flex-end" | "flex-start",
-    alignContent?: "start" | "center" | "space-between" | "space-around",
+    alignContent?: "flex-start" | "center" | "space-between" | "space-around" | "flex-end" | "space-evenly" | "stretch",
     width?: string,
     className?: "string",
     style?: React.CSSProperties,

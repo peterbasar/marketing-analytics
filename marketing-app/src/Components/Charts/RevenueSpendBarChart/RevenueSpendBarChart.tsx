@@ -46,7 +46,7 @@ const RevenueSpendBarChart = () => {
           >
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="source" />
-              <YAxis />
+              <YAxis tickFormatter={(value) => addSpacesToNumber(value)} />
               <Tooltip
                 formatter={(value: any, name: any): [string, string] => {
                   return [addSpacesToNumber(value), t(name)]
