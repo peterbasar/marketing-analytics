@@ -13,7 +13,12 @@ export const translations = {
         
         performance_report_table: "Performance report",
         spending_and_revenue_chart_heading: "Spending & Revenue",
+        roas_and_cpa_chart_heading: "ROAS & CPA",
+        spending: "Spending",
         partition: "Partition",
+        roas: "ROAS",
+        cpa: "CPA",
+        conversions: "Conversions",
 
         date_range: "Date range",
         date_range_start: "Start date",
