@@ -17,7 +17,7 @@ const InvalidApiKeyBlock = ({children}: InvalidApiKeyBlockInterface) => {
     const partitions = useDataManagerStore((state) => state.partitions)    
 
     return (
-        partitions.length == 0
+        partitions.length === 0
         ? (
             <Container style={{height: "100vh"}} flexGrow={100} >
                 <UnhideOnViewportWrapper>

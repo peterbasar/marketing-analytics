@@ -1,7 +1,6 @@
-import React, { useContext } from "react"
+import React from "react"
 /* Components */
 import Container from "Components/Container/Container"
-import { ThemeContext } from "Theme/Theme"
 
 
 interface CardInterface {
@@ -13,7 +12,6 @@ interface CardInterface {
 }
 
 const Card = ({padding, aspectRatio, width, style, children}: CardInterface) => {
-    const theme = useContext(ThemeContext);
     let useWidth: string = width ? width : "200px"
     let usePadding: string = padding ? padding : "10px";
 

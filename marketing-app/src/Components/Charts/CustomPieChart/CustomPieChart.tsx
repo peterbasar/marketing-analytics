@@ -22,20 +22,19 @@ const CustomPieChart = ({data}: CustomPieChartInterface) => {
     const { t } = useTranslation()
 
     /* Keep track of pieContainer container width */
-    const [pieContainerWidth, setDashboardWidth] = useState<number>(1920);
+    const [pieContainerWidth, setDashboardWidth] = useState<number>(0);
     const pieContainerRef = useRef<HTMLDivElement>(null);
 
     const handleResize = () => {
         if (pieContainerRef && pieContainerRef.current){
             setDashboardWidth(pieContainerRef.current.offsetWidth);
+            console.log("RESIZE:", pieContainerRef.current.offsetWidth)
+            console.log("pieContainerWidth:", pieContainerWidth)
         }
     }
 
     useEffect(() => {
-        window.addEventListener('resize', handleResize);
-
-        /* Call initially */
-        handleResize();
+        window.addEventListener('resize', handleResize)
 
         /* Unmount */
         return( () => {
@@ -46,7 +45,6 @@ const CustomPieChart = ({data}: CustomPieChartInterface) => {
     useLayoutEffect(() => {
         handleResize();
     })
-
 
     const theme = useContext(ThemeContext)    
 

@@ -1,6 +1,4 @@
-import React, { useEffect, useContext, useRef, useState } from "react"
-/* Components */
-import { ThemeContext } from "Theme/Theme"
+import React, { useEffect, useRef, useState } from "react"
 
 
 interface DashboardContextInterface {
@@ -19,7 +17,6 @@ interface DashboardContainerInterface {
 
 
 const DashboardContainer = ({width, style, children}: DashboardContainerInterface) => {
-    const theme = useContext(ThemeContext);
     let useWidth: string = width ? width : "inherit"
 
     /* Read dashboard container width */

@@ -44,7 +44,7 @@ const CustomNode = ({
           textAnchor={isOut ? 'end' : 'start'}
           x={isOut ? x - 6 : x + width + 6}
           y={y + height / 2}
-          fontSize="12"
+          fontSize="10"
         >
           { payload.name }
         </text>
@@ -52,7 +52,7 @@ const CustomNode = ({
           textAnchor={isOut ? 'end' : 'start'}
           x={isOut ? x - 6 : x + width + 6}
           y={y + height / 2 + 13}
-          fontSize="12"
+          fontSize="10"
           strokeOpacity="0.5"
         >
           {`${addSpacesToNumber(Math.round(payload.value*100)/100)}k` }

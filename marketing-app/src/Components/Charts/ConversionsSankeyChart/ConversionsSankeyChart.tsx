@@ -11,7 +11,7 @@ import {
 import { useDataManagerStore } from "Components/DataManager/DataManager.store";
 /* Components */
 import { ThemeContext } from "Theme/Theme";
-import CustomNode, { CustomNodeInterface } from "./CustomNode";
+import CustomNode from "./CustomNode";
 import addSpacesToNumber from "Utils/addSpacesToNumber";
 
 

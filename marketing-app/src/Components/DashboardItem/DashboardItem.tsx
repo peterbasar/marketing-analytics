@@ -1,8 +1,7 @@
-import React, { useContext, useEffect, useMemo } from "react"
+import React, { useContext, useMemo } from "react"
 import "Components/DashboardItem/DashboardItem.css"
 /* Components */
 import Container from "Components/Container/Container"
-import { ThemeContext } from "Theme/Theme"
 import { DashboardContext } from "Components/DashboardContainer/DashboardContainer"
 /* Constants */
 import { RESPONSIVE_BREAKS_INTERFACE } from "config"
@@ -31,7 +30,6 @@ interface DashboardItemInterface {
 
 
 const DashboardItem = ({heading, behavior, margin, style, children}: DashboardItemInterface) => {
-    const theme = useContext(ThemeContext);
     const dashboardContainer = useContext(DashboardContext);
 
     /* Perceived distance between items */

@@ -1,7 +1,6 @@
-import React, { useContext } from "react"
+import React from "react"
 import "Components/PartitionCard/PartitionCard.css"
 /* Components */
-import { ThemeContext } from "Theme/Theme"
 import Card from "Components/Card/Card"
 /* i18n */
 import { useTranslation } from "react-i18next"
@@ -18,8 +17,6 @@ interface PartitionCardInterface {
 const PartitionCard = ({brand, country, id, selected, onClick}: PartitionCardInterface) => {
     /* i18n */
     const { t } = useTranslation()
-
-    const theme = useContext(ThemeContext);
 
     const keyValue = (key: string, value: string) => {
         return (

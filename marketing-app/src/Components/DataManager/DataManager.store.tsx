@@ -98,13 +98,13 @@ export const useDataManagerStore = create(persist<useDataManagerStoreInterface>(
             toggleSources(value){
                 /*  If exists in selectedSources -> ignore in filter, remember item. */
                 let foundDuringFilter: Array<string> = []
-                let newSelectedSources = get().selectedSources.filter((source) => {
+                get().selectedSources.forEach((source) => {
                     if (source in value){
                         foundDuringFilter.push(source)
-                        return false
                     }
                 })
                 /* Append those sources that werent present before but are now toggled */
+                let newSelectedSources = [];
                 newSelectedSources.push(...value.filter((source) => {
                     return !(source in foundDuringFilter)
                 }))

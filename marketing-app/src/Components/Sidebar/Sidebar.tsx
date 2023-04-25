@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 /* Components */
 import { links } from "./links";
 import SidebarDesktop from "./SidebarDesktop";
@@ -9,8 +8,6 @@ import { useAppStore } from "App.store";
 
 
 const Sidebar = () => {
-    const navigate = useNavigate()
-
     /* Zustand */
     const windowBreakId = useAppStore((state) => state.windowBreakId)
     
