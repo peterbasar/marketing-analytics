@@ -22,32 +22,23 @@ const CustomPieChart = ({data}: CustomPieChartInterface) => {
     const { t } = useTranslation()
 
     /* Keep track of pieContainer container width */
-    const [pieContainerWidth, setDashboardWidth] = useState<number>(0);
+    const [pieContainerWidth, setPieContainerWidth] = useState<number>(1920);
     const pieContainerRef = useRef<HTMLDivElement>(null);
 
-    const handleResize = () => {
-        if (pieContainerRef && pieContainerRef.current){
-            setDashboardWidth(pieContainerRef.current.offsetWidth);
-            console.log("RESIZE:", pieContainerRef.current.offsetWidth)
-            console.log("pieContainerWidth:", pieContainerWidth)
-        }
-    }
 
     useEffect(() => {
-        window.addEventListener('resize', handleResize)
+        const resizeObserver = new ResizeObserver((entries) => {
+            const { width, height } = entries[0].contentRect;
+            setPieContainerWidth(width);
+          });
+          if (pieContainerRef && pieContainerRef.current){
+            resizeObserver.observe(pieContainerRef.current);
+          }
 
-        /* Unmount */
-        return( () => {
-            window.removeEventListener('resize', handleResize)
-        });
+          return () => resizeObserver.disconnect();
     }, [pieContainerRef])
 
-    useLayoutEffect(() => {
-        handleResize();
-    })
-
     const theme = useContext(ThemeContext)    
-
     
     /* Sort data by value */
     data.sort((a, b) => {
