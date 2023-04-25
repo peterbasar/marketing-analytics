@@ -5,7 +5,7 @@ import {
     PersonIcon,
     GridIcon,
     AnalyticsIcon,
-    FileTray,
+    FileTrayIcon,
 } from "Assets/Icons";
 
 
@@ -35,9 +35,9 @@ export const links: Array<linkInterface> = [
         icon: AnalyticsIcon,
     },
     {
-        name: "dashboard_link",
+        name: "partition_data_link",
         url: FRONTEND_ENDPOINTS.PARTITION_DATA,
-        icon: FileTray,
+        icon: FileTrayIcon,
     },
 ]
 

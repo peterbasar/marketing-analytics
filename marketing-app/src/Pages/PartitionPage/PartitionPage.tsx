@@ -24,6 +24,7 @@ const PartitionPage = () => {
     /* Zustand */
     const navigate = useNavigate();
     const paritions = useDataManagerStore((state) => state.partitions)
+    const selectedPartition = useDataManagerStore((state) => state.selectedPartition)
     const setSelectedPartition = useDataManagerStore((state) => state.setSelectedPartition)
 
 
@@ -38,6 +39,7 @@ const PartitionPage = () => {
                                     country={item.country}
                                     brand={item.brand}
                                     id={item.id}
+                                    selected={selectedPartition ? selectedPartition.id === item.id : false }
                                     onClick={() => {
                                         setSelectedPartition(item)
                                         navigate(FRONTEND_ENDPOINTS.DASHBOARD)
