@@ -3,10 +3,15 @@ import { useNavigate } from "react-router-dom";
 import "Components/Sidebar/SidebarMobile.css"
 /* i18n */
 import { useTranslation } from "react-i18next";
+import i18n from "i18n/i18n";
 /* Components */
 import { CloseIcon, MenuIcon } from "Assets/Icons";
 import { linkInterface } from "./links";
 import Container from "Components/Container/Container";
+import { GlobeIcon } from "Assets/Icons";
+import { AVAILABLE_LANGUAGES } from "i18n/resources";
+/* Zustand */
+import { useAppStore } from "App.store";
 
 
 interface SidebarMobileInterface {
@@ -17,6 +22,9 @@ const SidebarMobile = ({ links }: SidebarMobileInterface) => {
     const navigate = useNavigate()
 
     const [isOpen, setIsOpen] = useState<boolean>(false);
+
+    /* Zustand */
+    const activeEndpoint = useAppStore((state) => state.activeEndpoint)
 
     /* i18n */
     const { t } = useTranslation()
@@ -36,16 +44,40 @@ const SidebarMobile = ({ links }: SidebarMobileInterface) => {
                                 </li>
                                 {
                                     links.map((link) => {
+                                        let selected = link.url === activeEndpoint;
                                         return (
                                             <li     key={link.url}
-                                                    className=""
+                                                    className={selected ? "sidebar-mobile-li-selected" : ""}
                                                     onClick={() => {navigate(link.url)}}
                                             >
                                                 <Container justifyContent="space-between">
                                                     <div className="sidebar-icon-mobile-wrapper">
-                                                        <link.icon className="sidebar-icon-mobile" />
+                                                        <link.icon 
+                                                            className={selected ? "sidebar-icon-mobile-selected" : "sidebar-icon-mobile"}
+                                                        />
                                                     </div>
                                                     <div>{t(link.name)}</div>
+                                                </Container>               
+                                            </li>
+                                        )
+                                    })
+                                }
+                                {/* Map language options */}
+                                {
+                                    Object.keys(AVAILABLE_LANGUAGES).map((languageKey) => {
+                                        let selected = languageKey === i18n.language;
+                                        return (
+                                            <li     key={languageKey}
+                                                    className={selected ? "sidebar-mobile-li-selected" : ""}
+                                                    onClick={() => {i18n.changeLanguage(languageKey)}}
+                                            >
+                                                <Container justifyContent="space-between">
+                                                    <div className="sidebar-icon-mobile-wrapper">
+                                                        <GlobeIcon 
+                                                            className={selected ? "sidebar-icon-mobile-selected" : "sidebar-icon-mobile"}
+                                                        />
+                                                    </div>
+                                                    <div>{t(languageKey)}</div>
                                                 </Container>               
                                             </li>
                                         )

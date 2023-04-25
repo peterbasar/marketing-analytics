@@ -15,7 +15,7 @@
 .sidebar-mobile-ul > li{
     margin: 10px;
     padding: 20px 20px;
-    font-size: 24px;
+    font-size: 12px;
     text-align: center;
     border: 1px solid var(--hex-secondary);
     cursor: pointer;
@@ -26,12 +26,19 @@
 .sidebar-icon-mobile{
     fill: var(--hex-secondary);
 }
+.sidebar-icon-mobile-selected{
+    fill: var(--hex-primary);
+}
 .sidebar-mobile-ul > li:hover{
     background-color: var(--hex-secondary);
     color: var(--hex-primary);
 }
 .sidebar-mobile-ul > li:hover .sidebar-icon-mobile{
     fill: var(--hex-primary);
+}
+.sidebar-mobile-li-selected {
+    background-color: var(--hex-secondary);
+    color: var(--hex-primary);
 }
 .sidebar-icon-mobile-wrapper{
     height: 20px;

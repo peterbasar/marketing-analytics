@@ -9,9 +9,37 @@
     position: fixed;
     left: 0;
 }
-.sidebar-link-button{
+.sidebar-link-icon-selected{
+    fill: var(--hex-primary);
+}
+.sidebar-link-icon{
+    fill: var(--hex-secondary);
+}
+.sidebar-link-button,
+.sidebar-link-button-selected{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+
     padding: 10px;
     width: 30px;
     aspect-ratio: 1;
     cursor: pointer;
+}
+.sidebar-link-button{
+    color: var(--hex-secondary);
+}
+.sidebar-link-button:hover {
+    color: var(--hex-primary);
+    background-color: var(--hex-secondary);
+}
+.sidebar-link-button:hover .sidebar-link-icon{
+    fill: var(--hex-primary);
+}
+.sidebar-link-button-selected {
+    background-color: var(--hex-secondary);
+    color: var(--hex-primary);
 }
