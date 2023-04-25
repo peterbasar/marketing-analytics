@@ -25,6 +25,7 @@
     padding: 5px;
 }
 .api-key-page-input-wrapper > button {
+    cursor: pointer;
     color: var(--hex-secondary);
     background-color: var(--hex-primary);
 }

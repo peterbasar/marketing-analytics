@@ -54,7 +54,8 @@ const PartitionCard = ({brand, country, id, onClick}: PartitionCardInterface) =>
                     borderRadius: "var(--border-radius)",
                     border: "1px solid var(--hex-secondary)",
                     color: "var(--hex-secondary)",
-                    backgroundColor: "var(--hex-primary)"
+                    backgroundColor: "var(--hex-primary)",
+                    cursor: "pointer",
                 }}
                 onClick={() => {onClick && onClick()}}
             >
