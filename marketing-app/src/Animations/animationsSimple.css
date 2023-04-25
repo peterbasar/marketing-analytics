@@ -1,0 +1,38 @@
+/* <Hide unhide animation> */
+@keyframes unhide {
+    from {
+        opacity: 0;
+        transform: translateY(25%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes unhide-from-bottom {
+    from {
+        opacity: 0;
+        transform: translateY(-25%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes hide {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+.animation-unhide-default {
+    opacity: 0;
+}
+.animation-unhide {
+    animation-name: unhide;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+.animation-unhide-from-bottom {
+    animation-name: unhide-from-bottom;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
