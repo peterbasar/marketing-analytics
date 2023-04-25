@@ -1,14 +1,19 @@
 import { create } from 'zustand'
 import { FRONTEND_ENDPOINTS } from 'config'
+import { RESPONSIVE_BREAKS_INTERFACE, getBreakId } from 'config'
 
 
-interface AppStoreInterface {
+interface useAppStoreInterface {
     activeEndpoint: FRONTEND_ENDPOINTS,
     setActiveEndpoint: (value: string) => void,
+
+    windowBreakId: keyof RESPONSIVE_BREAKS_INTERFACE,
+    windowWidth: number,
+    setWindowWidth: (value: number) => void,
 }
 
 
-export const AppStore = create<AppStoreInterface>((
+export const useAppStore = create<useAppStoreInterface>((
     (set, get) => ({
         activeEndpoint: FRONTEND_ENDPOINTS.APIKEY,
         setActiveEndpoint: (value) => {
@@ -17,6 +22,14 @@ export const AppStore = create<AppStoreInterface>((
             }else{
                 set({ activeEndpoint: FRONTEND_ENDPOINTS.APIKEY })
             }
+        },
+        windowBreakId: "default",
+        windowWidth: 1920,
+        setWindowWidth: (value) => {
+            set({
+                windowWidth: value,
+                windowBreakId: getBreakId(value),
+            })
         }
     })
 ))

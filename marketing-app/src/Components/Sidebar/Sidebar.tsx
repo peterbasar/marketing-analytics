@@ -1,62 +1,31 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "Components/Sidebar/Sidebar.css"
-import { FRONTEND_ENDPOINTS } from "config";
+/* i18n */
+import { useTranslation } from "react-i18next";
 /* Components */
-import { PersonIcon } from "Assets/Icons";
-import { GridIcon } from "Assets/Icons";
-import { AnalyticsIcon } from "Assets/Icons";
-import Container from "Components/Container/Container";
+import { links } from "./links";
+import SidebarDesktop from "./SidebarDesktop";
+import SidebarMobile from "./SidebarMobile";
+/* Zustand */
+import { useAppStore } from "App.store";
 
 
 const Sidebar = () => {
     const navigate = useNavigate()
 
-    interface linkInterface {
-        url: string,
-        icon: React.FunctionComponent<React.SVGProps<SVGSVGElement> & {
-            title?: string | undefined;
-        }>,
-        onClick: () => void,
-    }
-    const links: Array<linkInterface> = [
-        {
-            url: FRONTEND_ENDPOINTS.APIKEY,
-            icon: PersonIcon,
-            onClick: () => {navigate(FRONTEND_ENDPOINTS.APIKEY)},
-        },
-        {
-            url: FRONTEND_ENDPOINTS.PARTITION,
-            icon: GridIcon,
-            onClick: () => {navigate(FRONTEND_ENDPOINTS.PARTITION)},
-        },
-        {
-            url: FRONTEND_ENDPOINTS.DASHBOARD,
-            icon: AnalyticsIcon,
-            onClick: () => {navigate(FRONTEND_ENDPOINTS.DASHBOARD)},
-        },
-    ]
-
+    /* Zustand */
+    const windowBreakId = useAppStore((state) => state.windowBreakId)
+    
     return (
         <>
-            <div className="sidebar-wrapper-placeholder" />
-            <div className="sidebar-wrapper">
-                <Container alignContent="start">
-                    {
-                        links.map((link) => {
-                            return (
-                                <div    key={link.url}
-                                        className="sidebar-link-button"
-                                        onClick={() => {link.onClick()}}
-                                >
-                                    <link.icon fill="var(--hex-secondary)"/>
-                                </div>
-                            )
-                        })
-                    }
-
-                </Container>
-            </div>
+            { windowBreakId !== "default" && windowBreakId !== "sm"
+                ? (
+                    <SidebarDesktop links={links} />
+                )
+                : (
+                    <SidebarMobile links={links} />
+                )
+            }
         </>
     )
 }
