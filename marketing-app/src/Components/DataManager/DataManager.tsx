@@ -25,6 +25,8 @@ const DataManager = ({children}: DataManagerInterface) => {
     const setSelectedPartition = useDataManagerStore((state) => state.setSelectedPartition);
     const setPartitions = useDataManagerStore((state) => state.setPartitions);
     const setPerformanceReportData = useDataManagerStore((state) => state.setPerformanceReportData);
+    const selectedPerformanceReportData = useDataManagerStore((state) => state.selectedPerformanceReportData);
+    const setSelectedPerformanceReportData = useDataManagerStore((state) => state.setSelectedPerformanceReportData);
     const setPartitionData = useDataManagerStore((state) => state.setPartitionData);
     const dateRangeStart = useDataManagerStore((state) => state.dateRangeStart);
     const dateRangeEnd = useDataManagerStore((state) => state.dateRangeEnd);
@@ -88,6 +90,7 @@ const DataManager = ({children}: DataManagerInterface) => {
             setDateRangeWithDate("dateRangeStart", oldDate)
             setDateRangeWithDate("dateRangeEnd", currentDate)
         }
+        dateInitialPageLoad.current = true
         /* Initial page load will permanently set 'dateInitialPageLoad' ref to false */
     }, [selectedPartition]);
 
@@ -100,10 +103,18 @@ const DataManager = ({children}: DataManagerInterface) => {
             /* Create Date Objects for present date and 1 year old date  */
             setSelectedSources(performanceReportData.map((item) => item.source))
         }
+        selectedSourcesInitialPageLoad.current = true
         /* Initial page load will permanently set 'selectedSourcesInitialPageLoad' ref to false */
     }, [performanceReportData]);
 
-    
+
+    /*  If selection changes or the performanceReportData
+        -> filter performanceData with selectedSources to selectedPerformanceReportData */
+    useEffect(() => {
+        setSelectedPerformanceReportData(
+            performanceReportData.filter((item) => selectedSources.includes(item.source)))
+    }, [selectedSources, performanceReportData]);
+
 
     // /*  On selected partition change, request partition data for the past year. */
     // useEffect(() => {    

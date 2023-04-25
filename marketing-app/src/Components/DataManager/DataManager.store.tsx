@@ -25,6 +25,8 @@ export interface useDataManagerStoreInterface {
 
     performanceReportData: Array<performanceReportItemInterface>,
     setPerformanceReportData: (value: Array<performanceReportItemInterface>) => void,
+    selectedPerformanceReportData: Array<performanceReportItemInterface>,
+    setSelectedPerformanceReportData: (value: Array<performanceReportItemInterface>) => void,
 
     dateRangeStart: string | null,
     dateRangeEnd: string | null,
@@ -33,8 +35,6 @@ export interface useDataManagerStoreInterface {
         type: "dateRangeStart" | "dateRangeEnd",
         year: number, month: number, day: number
     ) => void,
-
-    getRevenueSpendData: () => Array<revenueSpendDataItemInterface>,
 
     selectedSources: Array<performanceReportItemInterface["source"]>,
     setSelectedSources: (value: Array<performanceReportItemInterface["source"]>) => void,
@@ -74,6 +74,11 @@ export const useDataManagerStore = create(persist<useDataManagerStoreInterface>(
                 set({performanceReportData: value})
             },
 
+            selectedPerformanceReportData: [],
+            setSelectedPerformanceReportData(value) {
+                set({selectedPerformanceReportData: value})
+            },
+
             dateRangeStart: null,
             dateRangeEnd: null,
             setDateRangeWithDate(type, value) {
@@ -81,20 +86,6 @@ export const useDataManagerStore = create(persist<useDataManagerStoreInterface>(
             },
             setDateRangeWithValues(type, year, month, day) {
                 set({[type]: `${year}-${month}-${day}`})
-            },
-            
-            /* x - spend, y - revenue */
-            getRevenueSpendData(){
-                const performanceReportDataTemp = get().performanceReportData
-                let revenueSpendData: Array<revenueSpendDataItemInterface> = []
-                performanceReportDataTemp.forEach((item) => {
-                    revenueSpendData.push({
-                        source: item.source,
-                        spend: item.spend,
-                        revenue: item.revenue,
-                    })
-                });
-                return revenueSpendData
             },
 
             selectedSources: [],
