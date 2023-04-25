@@ -2,6 +2,8 @@ import React from "react"
 import "Components/BasicContentWrapper/BasicContentWrapper.css"
 /* Components */
 import Container from "Components/Container/Container"
+/* Zustand */
+import { useAppStore } from "App.store"
 
 
 interface BasicContentWrapperInterface {
@@ -10,11 +12,14 @@ interface BasicContentWrapperInterface {
 }
 
 const BasicContentWrapper = ({children, heading}: BasicContentWrapperInterface) => {
-    let contentGap: string = "40px";
+    /* Zustand */
+    const windowBreakId = useAppStore((state) => state.windowBreakId)
+
+    let contentGap: string = (windowBreakId === "default" || windowBreakId === "sm") ? "10px" : "40px"
 
     return (
         <Container 
-            alignContent="start"
+            alignContent="flex-start"
             flexGrow={100}
             justifyContent="start"
             style={{minHeight: "100vh"}}
