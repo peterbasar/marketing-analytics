@@ -5,8 +5,9 @@ export const translations = {
     translation: {
         /* Page link names */
         select_api_link: "Select API",
-        select_partition_link: "Select partition",
+        select_partition_link: "Select Partition",
         dashboard_link: "Dashboard",
+        partition_data_link: "Partition Data",
 
         dashboard_page_heading: "Dashboard",
         partition_page_heading: "Available Partitions",
@@ -18,6 +19,7 @@ export const translations = {
         select: "Select",
         
         performance_report_table: "Performance report",
+        partition_data_table: "Partition data",
         spending_and_revenue_chart_heading: "Spending & Revenue",
         roas_and_cpa_chart_heading: "ROAS & CPA",
         spending: "Spending",
@@ -67,5 +69,10 @@ export const translations = {
         /* Variables */
         spend: "Spent",
         revenue: "Revenue",
+
+        /* Languages */
+        "en-US": "EN",
+        "de-DE": "DE",
+
     }
 }
