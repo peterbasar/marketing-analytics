@@ -1,7 +1,5 @@
 import React, { useEffect, useContext, useRef, useState } from "react"
-import "Components/DashboardContainer/DashboardContainer.css"
 /* Components */
-import Container from "Components/Container/Container"
 import { ThemeContext } from "Theme/Theme"
 
 

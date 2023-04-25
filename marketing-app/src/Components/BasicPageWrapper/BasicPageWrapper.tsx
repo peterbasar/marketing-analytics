@@ -1,5 +1,4 @@
 import React from "react"
-import "Components/BasicPageWrapper/BasicPageWrapper.css"
 /* Components */
 import Container from "Components/Container/Container"
 import Sidebar from "Components/Sidebar/Sidebar"

@@ -1,7 +1,6 @@
 import React, { useContext } from "react"
 import "Components/PartitionCard/PartitionCard.css"
 /* Components */
-import Container from "Components/Container/Container"
 import { ThemeContext } from "Theme/Theme"
 import Card from "Components/Card/Card"
 /* i18n */

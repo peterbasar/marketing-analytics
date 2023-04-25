@@ -1,17 +1,10 @@
 import React, { useEffect, useRef } from "react"
 /* Data fetching calls */
 import getListOfPartitions from "./api/getListOfPartitions"
-import getListOfSources from "Components/DataManager/api/getListOfSources"
 import getPartitionData from "Components/DataManager/api/getPartitionData"
 import getPerformanceReport from "Components/DataManager/api/getPerformanceReport"
-import getSummaryStatistics from "./api/getSummaryStatistics"
-import getRevenue from "./api/getRevenue"
-import getConversions from "./api/getConversions"
-import getSpend from "./api/getSpend"
-/* utils */
-import { getApiDateParam } from "./api/utils"
 /* Zustand */
-import { useDataManagerStore, useDataManagerStoreInterface } from "./DataManager.store"
+import { useDataManagerStore } from "./DataManager.store"
 
 
 interface DataManagerInterface {
@@ -34,6 +27,8 @@ const DataManager = ({children}: DataManagerInterface) => {
     const performanceReportData = useDataManagerStore((state) => state.performanceReportData);
     const selectedSources = useDataManagerStore((state) => state.selectedSources);
     const setSelectedSources = useDataManagerStore((state) => state.setSelectedSources);
+    const currentModel = useDataManagerStore((state) => state.currentModel);
+    const setCurrentModel = useDataManagerStore((state) => state.setCurrentModel);
 
 
     /* Request list of partitions on each apiKey change and on load */
@@ -54,8 +49,8 @@ const DataManager = ({children}: DataManagerInterface) => {
     }, [apiKey]);
 
 
-    /*  Request performance report on (selected partition change, date range change) change and on 
-        load if selected parition and date range exists */
+    /*  Request performance report on (selected partition change, date range change, model change) 
+        change and on load if selected parition and date range exists */
     useEffect(() => {    
         if (selectedPartition && dateRangeStart && dateRangeEnd) {
             getPerformanceReport({
@@ -63,7 +58,7 @@ const DataManager = ({children}: DataManagerInterface) => {
                 partitionId: selectedPartition.id,
                 fromDate: dateRangeStart,
                 toDate: dateRangeEnd,
-                optimisationTarget: "revenue",
+                optimisationTarget: currentModel,
             }).then((report) => {
                 if (report !== null){
                     setPerformanceReportData(report);
@@ -72,7 +67,7 @@ const DataManager = ({children}: DataManagerInterface) => {
                 }
             });    
         }
-    }, [selectedPartition, dateRangeStart, dateRangeEnd]);
+    }, [selectedPartition, dateRangeStart, dateRangeEnd, currentModel]);
 
 
     /*  Reset date range picker values if selected partition changes -> ignore initial load update
@@ -116,8 +111,8 @@ const DataManager = ({children}: DataManagerInterface) => {
     }, [selectedSources, performanceReportData]);
 
 
-    /*  Request partition data on (selected partition change, date range change) change and on 
-    load if selected parition and date range exists */
+    /*  Request partition data on (selected partition change, date range change, model change) 
+        change and on load if selected parition and date range exists */
     useEffect(() => {    
         if (selectedPartition && dateRangeStart && dateRangeEnd) {
             getPartitionData({
@@ -125,115 +120,18 @@ const DataManager = ({children}: DataManagerInterface) => {
                 partitionId: selectedPartition.id,
                 fromDate: dateRangeStart,
                 toDate: dateRangeEnd,
-                optimisationTarget: "conversions",
+                optimisationTarget: currentModel,
                 offset: 0,
                 limit: -1,
             }).then((data) => {
                 if (data !== null){
-                    console.log("received partition data:", data)
                     setPartitionData(data);
                 }else{
                     setPartitionData([]);
                 }
             });    
         }
-    }, [selectedPartition, dateRangeStart, dateRangeEnd]);
-
-    // /*  On selected partition change, request partition data for the past year. */
-    // useEffect(() => {    
-    //     if (selectedPartition) {
-    //         getPartitionData({
-    //             xApiKey: apiKey,
-    //             partitionId: selectedPartition.id,
-    //             fromDate: getApiDateParam({year: 2022, month: 1, day: 1}),
-    //             toDate: getApiDateParam({year: 2022, month: 12, day: 31}),
-    //             optimisationTarget: "conversions",
-    //             source: "direct",
-    //             offset: 0,
-    //             limit: -1,
-    //         }).then((data) => {
-    //             // console.log("partition data:", data)
-    //         });  
-    //     }else{
-    //         setPerformanceReportData([]);
-    //     }
-    // }, [selectedPartition]);
-
-
-
-        // getListOfSources({
-        //         xApiKey: "XXXXXXXXXXXXXX",
-        //         partitionId: "932561105d21a54d3d1d2a941164ffec321cd76b",
-        //         fromDate: getApiDateParam({year: 2022, month: 1, day: 1}),
-        //         toDate: getApiDateParam({year: 2022, month: 12, day: 31}),
-        // }).then((sources) => {
-        //     console.log("sources:", sources)
-        // });
-
-        // getPartitionData({
-        //     xApiKey: "XXXXXXXXXXXXXX",
-        //     partitionId: "932561105d21a54d3d1d2a941164ffec321cd76b",
-        //     fromDate: getApiDateParam({year: 2022, month: 1, day: 1}),
-        //     toDate: getApiDateParam({year: 2022, month: 12, day: 31}),
-        //     optimisationTarget: "conversions",
-        //     source: "direct",
-        //     offset: 0,
-        //     limit: -1,
-        // }).then((data) => {
-        //     console.log("partition data:", data)
-        // });
-
-        // getPerformanceReport({
-        //     xApiKey: "XXXXXXXXXXXXXX",
-        //     partitionId: "932561105d21a54d3d1d2a941164ffec321cd76b",
-        //     fromDate: getApiDateParam({year: 2022, month: 1, day: 1}),
-        //     toDate: getApiDateParam({year: 2022, month: 12, day: 31}),
-        //     optimisationTarget: "revenue",
-        // }).then((report) => {
-        //     console.log("performance report:", report)
-        // });
-
-
-        // getSummaryStatistics({
-        //     xApiKey: "XXXXXXXXXXXXXX",
-        //     partitionId: "932561105d21a54d3d1d2a941164ffec321cd76b",
-        //     fromDate: getApiDateParam({year: 2022, month: 1, day: 1}),
-        //     toDate: getApiDateParam({year: 2022, month: 12, day: 31}),
-        //     optimisationTarget: "revenue",
-        // }).then((sources) => {
-        //     console.log("summary statistics:", sources)
-        // });
-
-        // getRevenue({
-        //     xApiKey: "XXXXXXXXXXXXXX",
-        //     partitionId: "932561105d21a54d3d1d2a941164ffec321cd76b",
-        //     fromDate: getApiDateParam({year: 2022, month: 1, day: 1}),
-        //     toDate: getApiDateParam({year: 2022, month: 12, day: 31}),
-        //     optimisationTarget: "revenue",
-        // }).then((revenue) => {
-        //     console.log("revenue:", revenue)
-        // });
-
-        // getConversions({
-        //     xApiKey: "XXXXXXXXXXXXXX",
-        //     partitionId: "932561105d21a54d3d1d2a941164ffec321cd76b",
-        //     fromDate: getApiDateParam({year: 2022, month: 1, day: 1}),
-        //     toDate: getApiDateParam({year: 2022, month: 12, day: 31}),
-        //     optimisationTarget: "revenue",
-        // }).then((conversions) => {
-        //     console.log("conversions:", conversions)
-        // });
-
-        // getSpend({
-        //     xApiKey: "XXXXXXXXXXXXXX",
-        //     partitionId: "932561105d21a54d3d1d2a941164ffec321cd76b",
-        //     fromDate: getApiDateParam({year: 2022, month: 1, day: 1}),
-        //     toDate: getApiDateParam({year: 2022, month: 12, day: 31}),
-        //     optimisationTarget: "revenue",
-        // }).then((spend) => {
-        //     console.log("spend:", spend)
-        // });
-    
+    }, [selectedPartition, dateRangeStart, dateRangeEnd, currentModel]);
 
     return <>{children}</>
 }

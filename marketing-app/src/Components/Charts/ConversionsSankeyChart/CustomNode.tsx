@@ -1,9 +1,8 @@
-import React, { useContext } from "react";
+import React from "react";
 import {
     Rectangle,
     Layer,
 } from "recharts";
-import { ThemeContext } from "Theme/Theme";
 import addSpacesToNumber from "Utils/addSpacesToNumber";
 
 
@@ -46,7 +45,6 @@ const CustomNode = ({
           x={isOut ? x - 6 : x + width + 6}
           y={y + height / 2}
           fontSize="12"
-          stroke={textColor}
         >
           { payload.name }
         </text>
@@ -55,7 +53,6 @@ const CustomNode = ({
           x={isOut ? x - 6 : x + width + 6}
           y={y + height / 2 + 13}
           fontSize="12"
-          stroke={textColor}
           strokeOpacity="0.5"
         >
           {`${addSpacesToNumber(Math.round(payload.value*100)/100)}k` }

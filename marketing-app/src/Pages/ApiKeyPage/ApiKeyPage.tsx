@@ -6,6 +6,7 @@ import { FRONTEND_ENDPOINTS } from "config"
 /* Components */
 import BasicPageWrapper from "Components/BasicPageWrapper/BasicPageWrapper";
 import Container from "Components/Container/Container";
+import UnhideOnViewportWrapper from "Animations/UnhideOnViewportWrapper";
 /* Zustand */
 import { useDataManagerStore } from "Components/DataManager/DataManager.store"
 /* i18n */
@@ -34,13 +35,15 @@ const ApiKeyPage = () => {
 
     return (
         <BasicPageWrapper>
-            <Container style={{minHeight: "100vh"}}>
-                <div className="api-key-page-input-wrapper">
-                    <p>{t("enter_your_api_key")}</p>
-                    <input value={input} onChange={handleInputChange}></input>
-                    <button onClick={() => {handleClick()}}>{t("continue")}</button>
-                </div>
-            </Container>
+            <UnhideOnViewportWrapper>
+                <Container style={{minHeight: "100vh"}}>
+                    <div className="api-key-page-input-wrapper">
+                        <p>{t("enter_your_api_key")}</p>
+                        <input value={input} onChange={handleInputChange}></input>
+                        <button onClick={() => {handleClick()}}>{t("continue")}</button>
+                    </div>
+                </Container>
+            </UnhideOnViewportWrapper>
         </BasicPageWrapper>            
     )
 }

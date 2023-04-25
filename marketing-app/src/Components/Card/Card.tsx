@@ -1,5 +1,4 @@
 import React, { useContext } from "react"
-import "Components/Card/Card.css"
 /* Components */
 import Container from "Components/Container/Container"
 import { ThemeContext } from "Theme/Theme"

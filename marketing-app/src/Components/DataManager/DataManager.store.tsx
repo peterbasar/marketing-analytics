@@ -4,7 +4,6 @@ import {
     paritionInterface,
     partitionDataItemInterface,
     performanceReportItemInterface,
-    revenueSpendDataItemInterface,
 } from 'Components/DataManager/DataManager.interfaces'
 
 
@@ -39,6 +38,10 @@ export interface useDataManagerStoreInterface {
     selectedSources: Array<performanceReportItemInterface["source"]>,
     setSelectedSources: (value: Array<performanceReportItemInterface["source"]>) => void,
     toggleSources: (value: Array<performanceReportItemInterface["source"]>) => void,
+
+    currentModel: partitionDataItemInterface["optimisation_target"],
+    setCurrentModel: (value: partitionDataItemInterface["optimisation_target"]) => void,
+
 }
 
 
@@ -106,7 +109,12 @@ export const useDataManagerStore = create(persist<useDataManagerStoreInterface>(
                     return !(source in foundDuringFilter)
                 }))
                 set({selectedSources: newSelectedSources})
-            }
+            },
+            
+            currentModel: "conversions",
+            setCurrentModel(value){
+                set({currentModel: value})
+            },
 
 
         }

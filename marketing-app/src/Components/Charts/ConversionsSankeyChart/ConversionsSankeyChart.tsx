@@ -3,15 +3,8 @@ import React, { useContext } from "react";
 import { useTranslation } from "react-i18next";
 /* Recharts */
 import {
-    BarChart,
-    Scatter,
-    XAxis,
-    YAxis,
-    CartesianGrid,
     Tooltip,
     ResponsiveContainer,
-    Bar,
-    Legend,
     Sankey,
 } from "recharts";
 /* Zustand */
@@ -46,14 +39,6 @@ const ConversionsSankeyChart = () => {
       })
     }
   })
-
-  console.log("custom data:",
-    {
-      nodes: nodes,
-      links: links,
-    }
-  )
-
 
   return (
       <ResponsiveContainer width="100%" height="100%">

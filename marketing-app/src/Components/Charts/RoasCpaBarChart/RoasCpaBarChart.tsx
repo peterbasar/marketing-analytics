@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 /* Recharts */
 import {
     BarChart,
-    Scatter,
     XAxis,
     YAxis,
     CartesianGrid,

@@ -1,5 +1,5 @@
-import React, { PureComponent, useContext, useRef, useEffect, useState, useLayoutEffect } from 'react';
-import { PieChart, Pie, Legend, Tooltip, ResponsiveContainer, Label } from 'recharts';
+import React, { useContext, useRef, useEffect, useState, useLayoutEffect } from 'react';
+import { PieChart, Pie, Tooltip, ResponsiveContainer } from 'recharts';
 /* i18n */
 import { useTranslation } from 'react-i18next';
 /* Components */

@@ -1,6 +1,4 @@
 import React, { useContext } from "react"
-/* Components */
-import { performanceReportItemInterface } from "Components/DataManager/DataManager.interfaces";
 /* MUI */
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 /* i18n */

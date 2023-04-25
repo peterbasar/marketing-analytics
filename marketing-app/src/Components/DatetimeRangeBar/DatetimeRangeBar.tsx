@@ -3,6 +3,7 @@ import "Components/DatetimeRangeBar/DatetimeRangeBar.css"
 import dayjs from 'dayjs';
 /* Components */
 import Container from "Components/Container/Container";
+import UnhideOnViewportWrapper from "Animations/UnhideOnViewportWrapper";
 /* Zustand */
 import { useDataManagerStore } from "Components/DataManager/DataManager.store";
 /* MUI */
@@ -24,44 +25,46 @@ const DatetimeRangeBar = () => {
 
     return (
         <>
-            <Container style={{
-                borderRadius: "var(--border-radius)",
-                outline: "1px solid var(--hex-secondary)",
-                width: "inherit",
-                gap: "20px",
-            }}
-                justifyContent="center"
-            >
-                <LocalizationProvider dateAdapter={AdapterDayjs}>
-                    <div className="dashboard-bar-item">
-                        <DatePicker label={t("date_range_start")} value={dayjs(dateRangeStart)} 
-                            maxDate={dayjs(dateRangeEnd)}
-                            onChange={(e) => {
-                                if (e){
-                                        setDateRangeWithValues(
-                                            "dateRangeStart",
-                                            e.year(), e.month()+1, e.date()
-                                        )
-                                    }
-                            }}
-                        />
-                    </div>
-                    
-                    <div className="dashboard-bar-item">
-                        <DatePicker label={t("date_range_end")} value={dayjs(dateRangeEnd)} 
-                            minDate={dayjs(dateRangeStart)}
-                            onChange={(e) => {
-                                if (e){
-                                        setDateRangeWithValues(
-                                            "dateRangeEnd",
-                                            e.year(), e.month()+1, e.date()
-                                        )
-                                    }
-                            }} 
-                        />
-                    </div>
-                </LocalizationProvider>
-            </Container>
+            <UnhideOnViewportWrapper>
+                <Container style={{
+                    borderRadius: "var(--border-radius)",
+                    outline: "1px solid var(--hex-secondary)",
+                    width: "inherit",
+                    gap: "20px",
+                }}
+                    justifyContent="center"
+                >
+                    <LocalizationProvider dateAdapter={AdapterDayjs}>
+                        <div className="dashboard-bar-item">
+                            <DatePicker label={t("date_range_start")} value={dayjs(dateRangeStart)} 
+                                maxDate={dayjs(dateRangeEnd)}
+                                onChange={(e) => {
+                                    if (e){
+                                            setDateRangeWithValues(
+                                                "dateRangeStart",
+                                                e.year(), e.month()+1, e.date()
+                                            )
+                                        }
+                                }}
+                            />
+                        </div>
+                        
+                        <div className="dashboard-bar-item">
+                            <DatePicker label={t("date_range_end")} value={dayjs(dateRangeEnd)} 
+                                minDate={dayjs(dateRangeStart)}
+                                onChange={(e) => {
+                                    if (e){
+                                            setDateRangeWithValues(
+                                                "dateRangeEnd",
+                                                e.year(), e.month()+1, e.date()
+                                            )
+                                        }
+                                }} 
+                            />
+                        </div>
+                    </LocalizationProvider>
+                </Container>
+            </UnhideOnViewportWrapper>
         </>
     )
 }

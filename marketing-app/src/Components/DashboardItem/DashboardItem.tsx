@@ -56,15 +56,16 @@ const DashboardItem = ({heading, behavior, margin, style, children}: DashboardIt
             <div    className="dashboard-item-inner-wrapper"
                     style={{margin: useMargin}}
             >
-                <Container wrap="nowrap" alignItems="stretch" flexDirection="column" style={{overflow: "hidden"}}>
-                    { heading 
-                        ? (<h2 style={{height: `${headingHeight}px`, margin: `${headingMargin}px`,}}>{heading}</h2>)
-                        : (<></>)
-                    }
-                    <div style={{height: contentHeight}}>
-                        {children}
-                    </div>
-                </Container>
+                    <Container wrap="nowrap" alignItems="stretch" flexDirection="column" style={{overflow: "hidden"}}>
+                        { heading 
+                            ? (<h2 style={{height: `${headingHeight}px`, margin: `${headingMargin}px`,}}>{heading}</h2>)
+                            : (<></>)
+                        }
+
+                        <div style={{height: contentHeight}}>
+                            {children}
+                        </div>
+                    </Container>
             </div>
         </div>
     )

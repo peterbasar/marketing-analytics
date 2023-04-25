@@ -6,7 +6,6 @@ import i18n from "i18n/i18n";
 import { useTranslation } from "react-i18next";
 import { AVAILABLE_LANGUAGES } from "i18n/resources";
 /* Components */
-import { CloseIcon } from "Assets/Icons";
 import { linkInterface } from "./links";
 import Container from "Components/Container/Container";
 /* Zustand */
@@ -60,19 +59,6 @@ const SidebarDesktop = ({ links }: SidebarDesktopInterface) => {
                             )
                             })
                         }
-                        {/* <div    key={"en-US"}
-                                className={AVAILABLE_LANGUAGES["en-US"] === i18n.language ? `sidebar-link-button-selected` : `sidebar-link-button`}
-                                onClick={() => {i18n.changeLanguage(AVAILABLE_LANGUAGES["en-US"])}}
-                        >
-                            DE
-                        </div>
-                        <div    key={"en-US"}
-                                className={AVAILABLE_LANGUAGES["en-US"] === i18n.language ? `sidebar-link-button-selected` : `sidebar-link-button`}
-                                onClick={() => {i18n.changeLanguage(AVAILABLE_LANGUAGES["en-US"])}}
-                        >
-                            EN
-                        </div> */}
-
                     </Container>
                 </Container>
             </div>

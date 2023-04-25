@@ -1,5 +1,4 @@
-import React, { forwardRef, ForwardedRef } from "react";
-import "Components/Container/Container.css"
+import React, { forwardRef } from "react";
 
 
 interface ContainerInterface {
@@ -28,9 +27,11 @@ const Container = forwardRef<HTMLDivElement, ContainerInterface>(({
         children,
 }, ref) => {
     return (
-        <div    className={`container ${className}`}
+        <div    className={`${className}`}
                 ref={ref}
                 style={{
+            display: "flex",
+            height: "inherit",
             flexWrap: wrap ? wrap : "wrap",
             flexDirection: flexDirection ? flexDirection : "row",
             justifyContent: justifyContent ? justifyContent : "center",

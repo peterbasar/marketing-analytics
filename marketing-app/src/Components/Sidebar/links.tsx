@@ -20,7 +20,7 @@ export interface linkInterface {
 
 export const links: Array<linkInterface> = [
     {
-        name: "select_api_link",
+        name: "set_api_link",
         url: FRONTEND_ENDPOINTS.APIKEY,
         icon: PersonIcon,
     },

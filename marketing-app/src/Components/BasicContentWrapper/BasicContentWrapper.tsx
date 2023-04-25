@@ -1,7 +1,7 @@
 import React from "react"
-import "Components/BasicContentWrapper/BasicContentWrapper.css"
 /* Components */
 import Container from "Components/Container/Container"
+import UnhideOnViewportWrapper from "Animations/UnhideOnViewportWrapper"
 /* Zustand */
 import { useAppStore } from "App.store"
 
@@ -29,13 +29,17 @@ const BasicContentWrapper = ({children, heading}: BasicContentWrapperInterface) 
             >
                 { heading
                     ? (
-                        <h1 style={{padding: `30px 30px`, margin: `0 0 ${contentGap} 0`, wordWrap: "break-word", backgroundColor: "var(--hex-secondary)", color: "var(--hex-primary)"}}>
-                            {heading}
-                        </h1>
+                        <UnhideOnViewportWrapper>
+                            <h1 style={{padding: `30px 30px`, margin: `0 0 ${contentGap} 0`, wordWrap: "break-word", backgroundColor: "var(--hex-secondary)", color: "var(--hex-primary)"}}>
+                                {heading}
+                            </h1>
+                        </UnhideOnViewportWrapper>
                     )
                     : (<></>)
                 }
-                {children} 
+                <UnhideOnViewportWrapper>
+                    {children} 
+                </UnhideOnViewportWrapper>
             </Container>
         </Container>
     )

@@ -1,7 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-/* i18n */
-import { useTranslation } from "react-i18next";
 /* Components */
 import { links } from "./links";
 import SidebarDesktop from "./SidebarDesktop";
