@@ -1,6 +1,7 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from "react-router-dom";
 import './App.css';
+import './fonts.css';
 /* Constants */
 import { FRONTEND_ENDPOINTS } from 'config';
 /* Pages */
@@ -12,15 +13,11 @@ import PartitionDataPage from 'Pages/PartitionDataPage/PartitionDataPage';
 import DataManager from 'Components/DataManager/DataManager';
 /* Zustand */
 import { useAppStore } from 'App.store';
-/* Initialize i18n */
-import { AVAILABLE_LANGUAGES } from 'i18n/resources';
-import i18n from 'i18n/i18n';
 
 
 function App() {
   /* Zustand */
   const setActiveEndpoint = useAppStore((state) => state.setActiveEndpoint)
-  const windowWidth = useAppStore((state) => state.windowWidth)
   const setWindowWidth = useAppStore((state) => state.setWindowWidth)
 
   /* Set the current location endpoint variable each page change */
@@ -39,7 +36,7 @@ function App() {
     return( () => { /* Unmount */
         window.removeEventListener('resize', handleResize)
     });
-  }, [])
+  }, [setWindowWidth])
   
 
   return (
