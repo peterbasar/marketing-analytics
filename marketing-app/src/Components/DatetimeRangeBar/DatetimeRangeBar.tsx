@@ -1,5 +1,5 @@
 import React from "react";
-import "Pages/DashboardPage/Components/DashboardBar/DashboardBar.css"
+import "Components/DatetimeRangeBar/DatetimeRangeBar.css"
 import dayjs from 'dayjs';
 /* Components */
 import Container from "Components/Container/Container";
@@ -13,7 +13,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { useTranslation } from "react-i18next";
 
 
-const DashboardBar = () => {
+const DatetimeRangeBar = () => {
     /* i18n */
     const { t } = useTranslation()
 
@@ -65,4 +65,4 @@ const DashboardBar = () => {
         </>
     )
 }
-export default DashboardBar
+export default DatetimeRangeBar

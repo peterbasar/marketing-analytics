@@ -10,7 +10,7 @@ import BasicPageWrapper from "Components/BasicPageWrapper/BasicPageWrapper";
 import Card from "Components/Card/Card";
 import CardBox from "Components/CardBox/CardBox";
 import PartitionCard from "Components/PartitionCard/PartitionCard";
-import DashboardBar from "Pages/DashboardPage/Components/DashboardBar/DashboardBar";
+import DatetimeRangeBar from "Components/DatetimeRangeBar/DatetimeRangeBar";
 import DashboardContainer from "Components/DashboardContainer/DashboardContainer";
 import DashboardItem from "Components/DashboardItem/DashboardItem"
 import PerformanceReportTable from "Components/Tables/PerformanceReportTable";
@@ -36,7 +36,7 @@ const DashboardPage = () => {
             <BasicContentWrapper heading={`${t("dashboard_page_heading")} - ${selectedPartition?.brand}`}>
                 <Container  justifyContent="start" alignContent="start" alignItems="stretch" 
                             flexDirection="column" flexGrow={100} width="100%">
-                    <DashboardBar />
+                    <DatetimeRangeBar />
 
                     <DashboardContainer>
                         
