@@ -15,7 +15,6 @@ import { useAppStore } from 'App.store';
 /* Initialize i18n */
 import { AVAILABLE_LANGUAGES } from 'i18n/resources';
 import i18n from 'i18n/i18n';
-i18n.changeLanguage(AVAILABLE_LANGUAGES['en-US']);
 
 
 function App() {
