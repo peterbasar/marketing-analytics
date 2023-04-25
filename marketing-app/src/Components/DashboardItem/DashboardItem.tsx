@@ -51,7 +51,7 @@ const DashboardItem = ({heading, behavior, margin, style, children}: DashboardIt
         <div className="dashboard-item-outer-wrapper" style={{
             gridColumn: `span ${behavior[breakId].col}`,
             gridRow: `span ${behavior[breakId].row}`,
-            aspectRatio: `${Math.round(behavior[breakId].col/behavior[breakId].row)}`,
+            aspectRatio: `${behavior[breakId].col/behavior[breakId].row}`,
         }}>
             <div    className="dashboard-item-inner-wrapper"
                     style={{margin: useMargin}}
