@@ -2,6 +2,7 @@ export enum FRONTEND_ENDPOINTS {
     APIKEY = "/", 
     PARTITION = "/partition",
     DASHBOARD = "/dashboard",
+    PARTITION_DATA = "/partition-data",
 }
 
 export const BACKEND_ENDPOINTS = {
