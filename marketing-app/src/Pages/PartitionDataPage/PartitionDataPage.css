@@ -1,0 +1,5 @@
+.partition-page{
+    flex-grow: 100;
+    background-color: red;
+    min-height: 100vh;
+}

@@ -116,6 +116,29 @@ const DataManager = ({children}: DataManagerInterface) => {
     }, [selectedSources, performanceReportData]);
 
 
+    /*  Request partition data on (selected partition change, date range change) change and on 
+    load if selected parition and date range exists */
+    useEffect(() => {    
+        if (selectedPartition && dateRangeStart && dateRangeEnd) {
+            getPartitionData({
+                xApiKey: apiKey,
+                partitionId: selectedPartition.id,
+                fromDate: dateRangeStart,
+                toDate: dateRangeEnd,
+                optimisationTarget: "conversions",
+                offset: 0,
+                limit: -1,
+            }).then((data) => {
+                if (data !== null){
+                    console.log("received partition data:", data)
+                    setPartitionData(data);
+                }else{
+                    setPartitionData([]);
+                }
+            });    
+        }
+    }, [selectedPartition, dateRangeStart, dateRangeEnd]);
+
     // /*  On selected partition change, request partition data for the past year. */
     // useEffect(() => {    
     //     if (selectedPartition) {
