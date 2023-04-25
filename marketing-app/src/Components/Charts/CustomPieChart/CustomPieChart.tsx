@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useEffect, useState, useLayoutEffect } from 'react';
+import React, { useContext, useRef, useEffect, useState } from 'react';
 import { PieChart, Pie, Tooltip, ResponsiveContainer } from 'recharts';
 /* i18n */
 import { useTranslation } from 'react-i18next';
@@ -6,7 +6,6 @@ import { useTranslation } from 'react-i18next';
 import { ThemeContext } from 'Theme/Theme';
 import CustomLabel from './CustomLabel';
 import addSpacesToNumber from 'Utils/addSpacesToNumber';
-
 
 
 interface CustomPieChartInterface {
@@ -28,7 +27,7 @@ const CustomPieChart = ({data}: CustomPieChartInterface) => {
 
     useEffect(() => {
         const resizeObserver = new ResizeObserver((entries) => {
-            const { width, height } = entries[0].contentRect;
+            const { width, } = entries[0].contentRect;
             setPieContainerWidth(width);
           });
           if (pieContainerRef && pieContainerRef.current){

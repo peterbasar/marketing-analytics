@@ -18,7 +18,6 @@ const DataManager = ({children}: DataManagerInterface) => {
     const setSelectedPartition = useDataManagerStore((state) => state.setSelectedPartition);
     const setPartitions = useDataManagerStore((state) => state.setPartitions);
     const setPerformanceReportData = useDataManagerStore((state) => state.setPerformanceReportData);
-    const selectedPerformanceReportData = useDataManagerStore((state) => state.selectedPerformanceReportData);
     const setSelectedPerformanceReportData = useDataManagerStore((state) => state.setSelectedPerformanceReportData);
     const setPartitionData = useDataManagerStore((state) => state.setPartitionData);
     const dateRangeStart = useDataManagerStore((state) => state.dateRangeStart);
@@ -28,7 +27,6 @@ const DataManager = ({children}: DataManagerInterface) => {
     const selectedSources = useDataManagerStore((state) => state.selectedSources);
     const setSelectedSources = useDataManagerStore((state) => state.setSelectedSources);
     const currentModel = useDataManagerStore((state) => state.currentModel);
-    const setCurrentModel = useDataManagerStore((state) => state.setCurrentModel);
 
 
     /* Request list of partitions on each apiKey change and on load */
@@ -46,7 +44,7 @@ const DataManager = ({children}: DataManagerInterface) => {
                 setPartitions([]);
             }
         });
-    }, [apiKey]);
+    }, [apiKey, setSelectedPartition, setPartitions]);
 
 
     /*  Request performance report on (selected partition change, date range change, model change) 
@@ -67,7 +65,7 @@ const DataManager = ({children}: DataManagerInterface) => {
                 }
             });    
         }
-    }, [selectedPartition, dateRangeStart, dateRangeEnd, currentModel]);
+    }, [apiKey, setPerformanceReportData, selectedPartition, dateRangeStart, dateRangeEnd, currentModel]);
 
 
     /*  Reset date range picker values if selected partition changes -> ignore initial load update
@@ -87,7 +85,7 @@ const DataManager = ({children}: DataManagerInterface) => {
         }
         dateInitialPageLoad.current = true
         /* Initial page load will permanently set 'dateInitialPageLoad' ref to false */
-    }, [selectedPartition]);
+    }, [dateRangeEnd, dateRangeStart, setDateRangeWithDate, selectedPartition]);
 
 
     /*  Reset selected sources if new performance report data changes
@@ -100,7 +98,7 @@ const DataManager = ({children}: DataManagerInterface) => {
         }
         selectedSourcesInitialPageLoad.current = true
         /* Initial page load will permanently set 'selectedSourcesInitialPageLoad' ref to false */
-    }, [performanceReportData]);
+    }, [performanceReportData, selectedSources.length, setSelectedSources]);
 
 
     /*  If selection changes or the performanceReportData
@@ -108,7 +106,7 @@ const DataManager = ({children}: DataManagerInterface) => {
     useEffect(() => {
         setSelectedPerformanceReportData(
             performanceReportData.filter((item) => selectedSources.includes(item.source)))
-    }, [selectedSources, performanceReportData]);
+    }, [selectedSources, performanceReportData, setSelectedPerformanceReportData]);
 
 
     /*  Request partition data on (selected partition change, date range change, model change) 
@@ -131,7 +129,7 @@ const DataManager = ({children}: DataManagerInterface) => {
                 }
             });    
         }
-    }, [selectedPartition, dateRangeStart, dateRangeEnd, currentModel]);
+    }, [selectedPartition, dateRangeStart, dateRangeEnd, currentModel, apiKey, setPartitionData]);
 
     return <>{children}</>
 }

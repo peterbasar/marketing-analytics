@@ -19,7 +19,7 @@ const PerformanceReportTable = () => {
     { field:  "source",
       headerName: t('column_source') as string,
       width: 240,
-      type: "number",
+      type: "string",
       valueGetter: (params: GridValueGetterParams) =>
       t(params.row.source),
     },
@@ -30,7 +30,6 @@ const PerformanceReportTable = () => {
     {
       field: "roas",
       headerName: t('column_roas') as string,
-      description: 'This column has a value getter and is not sortable.',
       type: 'number',
       minWidth: 100,
       flex: 0.5,
@@ -38,7 +37,6 @@ const PerformanceReportTable = () => {
     {
       field: "cpa",
       headerName: t('column_cpa') as string,
-      description: 'This column has a value getter and is not sortable.',
       type: 'number',
       minWidth: 100,
       flex: 0.5,
