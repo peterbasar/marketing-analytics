@@ -53,6 +53,9 @@ export const translations = {
         column_roas: "ROAS",
         column_cpa: "CPA",
 
+        revenue_on_ad_spent: "Revenue on ad spent",
+        cost_per_acquisition: "Cost per acquisition",
+
         /* Source names */
         affiliate_prospecting: "Affiliate prospecting",
         baseline: "Baseline",

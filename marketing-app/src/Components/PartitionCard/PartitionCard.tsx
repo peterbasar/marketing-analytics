@@ -2,6 +2,8 @@ import React from "react"
 import "Components/PartitionCard/PartitionCard.css"
 /* Components */
 import Card from "Components/Card/Card"
+/* MUI */
+import Tooltip from '@mui/material/Tooltip';
 /* i18n */
 import { useTranslation } from "react-i18next"
 
@@ -25,10 +27,13 @@ const PartitionCard = ({brand, country, id, selected, onClick}: PartitionCardInt
                     display: "flex",
                     marginBottom: "5px",
                     color: "var(--hex-secondary)"}}>
-                <p style={{margin: "0"}}><b>{key}:&nbsp;</b></p>
-                <p style={{margin: "0", overflow: "hidden", textOverflow: "ellipsis",}}>
-                    {value}
-                </p>
+                
+                    <p style={{margin: "0"}}><b>{key}:&nbsp;</b></p>
+                    <Tooltip title={`${key}: ${value}`}>
+                        <p style={{margin: "0", overflow: "hidden", textOverflow: "ellipsis",}}>
+                            {value}
+                        </p>
+                    </Tooltip>
             </div> 
         )
     }

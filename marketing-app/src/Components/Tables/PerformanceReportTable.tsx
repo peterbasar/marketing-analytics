@@ -33,6 +33,7 @@ const PerformanceReportTable = () => {
       type: 'number',
       minWidth: 100,
       flex: 0.5,
+      description: t("revenue_on_ad_spent") as string,
     },
     {
       field: "cpa",
@@ -40,6 +41,7 @@ const PerformanceReportTable = () => {
       type: 'number',
       minWidth: 100,
       flex: 0.5,
+      description: t("cost_per_acquisition") as string,
     },
   ];
 
