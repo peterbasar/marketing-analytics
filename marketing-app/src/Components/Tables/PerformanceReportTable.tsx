@@ -11,7 +11,7 @@ const PerformanceReportTable = () => {
   /* Zustand */
   const performanceReportData = useDataManagerStore((state) => state.performanceReportData)
   const selectedSources = useDataManagerStore((state) => state.selectedSources)
-  const toggleSources = useDataManagerStore((state) => state.toggleSources)
+  const setSelectedSources = useDataManagerStore((state) => state.setSelectedSources)
   /* i18n */
   const { t } = useTranslation()
 
@@ -50,7 +50,7 @@ const PerformanceReportTable = () => {
         rows={performanceReportData}
         columns={columns}
         getRowId={(row) => {return row.source}}
-        onRowSelectionModelChange={(model) => {toggleSources(model as string[])}}
+        onRowSelectionModelChange={(model) => {setSelectedSources(model as string[])}}
         rowSelectionModel={selectedSources}
         checkboxSelection
       />

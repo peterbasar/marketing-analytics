@@ -23,6 +23,9 @@ const ConversionsSankeyChart = () => {
 
   /* Zustand */
   const selectedPerformanceReportData = useDataManagerStore((state) => state.selectedPerformanceReportData)
+  if (selectedPerformanceReportData.length == 0){
+    return (<></>)
+  }
 
   /* Generate nodes and links */
   // Define first layer

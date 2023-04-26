@@ -92,8 +92,7 @@ const DataManager = ({children}: DataManagerInterface) => {
         -> ignore initial load update unless selected sources are empty */
     const selectedSourcesInitialPageLoad = useRef<boolean>(true);
     useEffect(() => {
-        if (selectedSourcesInitialPageLoad.current === false || selectedSources.length === 0){
-            /* Create Date Objects for present date and 1 year old date  */
+        if (selectedSourcesInitialPageLoad.current === false){
             setSelectedSources(performanceReportData.map((item) => item.source))
         }
         selectedSourcesInitialPageLoad.current = true
