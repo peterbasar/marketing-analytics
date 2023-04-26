@@ -23,7 +23,7 @@ const ConversionsSankeyChart = () => {
 
   /* Zustand */
   const selectedPerformanceReportData = useDataManagerStore((state) => state.selectedPerformanceReportData)
-  if (selectedPerformanceReportData.length == 0){
+  if (selectedPerformanceReportData.length === 0){
     return (<></>)
   }
 
