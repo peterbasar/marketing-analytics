@@ -45,8 +45,8 @@ const RoasCpaBarChart = () => {
             margin={{ top: 20, right: 10, bottom: 10, left: 20 }}
           >
               <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="source" />
-              <YAxis />
+              <XAxis dataKey="source" fontSize={"small"} />
+              <YAxis fontSize={"small"} />
               <Tooltip
                 formatter={(value: any, name: any): [string, string] => {
                   return [addSpacesToNumber(value), t(name)]
