@@ -1,4 +1,4 @@
-# Technical assignment: Web application - BingeBook
+# Technical assignment: Web application - Marketing analytics
 
 ## Task
 - Create ReactJS dashboard with that presents different aspects of the database
