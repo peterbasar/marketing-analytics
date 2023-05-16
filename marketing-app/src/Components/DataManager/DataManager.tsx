@@ -30,7 +30,7 @@ const DataManager = ({children}: DataManagerInterface) => {
 
 
     /* Request list of partitions on each apiKey change and on load */
-    useEffect(() => {    
+    useEffect(() => {
         getListOfPartitions({xApiKey: apiKey}).then((partitions) => {
             if (partitions !== null) {
                 setPartitions(partitions)
@@ -70,7 +70,7 @@ const DataManager = ({children}: DataManagerInterface) => {
 
     /*  Reset date range picker values if selected partition changes -> ignore initial load update
         if there is date already present */
-    const dateInitialPageLoad = useRef<boolean>(true);
+    const dateInitialPageLoad = useRef<boolean>(false);
     useEffect(() => {
         /*  This way we can ignore overwriting date picker time on page refresh
             (selected partition didnt change) */
@@ -88,15 +88,13 @@ const DataManager = ({children}: DataManagerInterface) => {
     }, [dateRangeEnd, dateRangeStart, setDateRangeWithDate, selectedPartition]);
 
 
-    /*  Reset selected sources if new performance report data changes
-        -> ignore initial load update unless selected sources are empty */
-    const selectedSourcesInitialPageLoad = useRef<boolean>(true);
+    /*  Reset selected sources on page refresh */
+    const selectedSourcesInitialPageLoad = useRef<boolean>(false);
     useEffect(() => {
         if (selectedSourcesInitialPageLoad.current === false){
             setSelectedSources(performanceReportData.map((item) => item.source))
+            selectedSourcesInitialPageLoad.current = true
         }
-        selectedSourcesInitialPageLoad.current = true
-        /* Initial page load will permanently set 'selectedSourcesInitialPageLoad' ref to false */
     }, [performanceReportData, selectedSources.length, setSelectedSources]);
 
 

@@ -10,6 +10,7 @@ import PartitionCard from "Components/PartitionCard/PartitionCard";
 import UnhideOnViewportWrapper from "Animations/UnhideOnViewportWrapper";
 import { partitionDataItemInterface } from "Components/DataManager/DataManager.interfaces";
 import InvalidApiKeyBlock from "Components/InvalidApiKeyBlock/InvalidApiKeyBlock";
+import PageInfoAlert from "Components/PageInfoAlert/PageInfoAlert";
 /* Mui */
 import Select from '@mui/material/Select';
 import InputLabel from '@mui/material/InputLabel';
@@ -38,6 +39,7 @@ const PartitionPage = () => {
 
     return (
         <BasicPageWrapper>
+          <PageInfoAlert />
             <InvalidApiKeyBlock>
                 <BasicContentWrapper heading={`${t("partition_page_heading")}`}>
                     <Container>

@@ -1,6 +1,7 @@
 import apiCall from "Utils/apiCall"
 import { getPerformanceReportUrl } from "Components/DataManager/api/urlBuilder"
 import { performanceReportItemInterface } from "Components/DataManager/DataManager.interfaces"
+import { offlineDataMode } from "config"
 
 
 interface getPerformanceReportInterface {
@@ -18,6 +19,10 @@ const getPerformanceReport = async ({
         toDate,
         optimisationTarget,
 }: getPerformanceReportInterface): Promise<Array<performanceReportItemInterface> | null> => {
+    if (offlineDataMode === true){
+        const data: Array<performanceReportItemInterface> = require('Components/DataManager/data/getPerformanceReport.json')
+        return data
+    }
 
     let response = await apiCall({
         method: "GET",

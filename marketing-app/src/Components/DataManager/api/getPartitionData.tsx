@@ -1,6 +1,7 @@
 import apiCall from "Utils/apiCall"
 import { getPartitionDataUrl } from "Components/DataManager/api/urlBuilder"
 import { partitionDataItemInterface } from "Components/DataManager/DataManager.interfaces"
+import { offlineDataMode } from "config"
 
 
 interface getPartitionDataInterface {
@@ -24,6 +25,10 @@ const getPartitionData = async ({
         offset,
         limit
 }: getPartitionDataInterface): Promise<Array<partitionDataItemInterface> | null> => {
+    if (offlineDataMode === true){
+        const data: Array<partitionDataItemInterface> = require('Components/DataManager/data/getPartitionData.json')
+        return data
+    }
 
     let response = await apiCall({
         method: "GET",

@@ -10,6 +10,7 @@ import DashboardContainer from "Components/DashboardContainer/DashboardContainer
 import DashboardItem from "Components/DashboardItem/DashboardItem"
 import PartitionDataTable from "Components/Tables/ParitionDataTable";
 import InvalidApiKeyBlock from "Components/InvalidApiKeyBlock/InvalidApiKeyBlock";
+import PageInfoAlert from "Components/PageInfoAlert/PageInfoAlert";
 /* Zustand */
 import { useDataManagerStore } from "Components/DataManager/DataManager.store";
 
@@ -22,6 +23,7 @@ const PartitionDataPage = () => {
 
     return (
         <BasicPageWrapper>
+            <PageInfoAlert />
             <InvalidApiKeyBlock>
                 <BasicContentWrapper heading={`${t("partition_data_page_heading")} - ${selectedPartition?.brand}`}>
                     <Container  justifyContent="start" alignContent="flex-start" alignItems="stretch" 

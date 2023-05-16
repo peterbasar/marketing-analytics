@@ -7,6 +7,7 @@ import { FRONTEND_ENDPOINTS } from "config"
 import BasicPageWrapper from "Components/BasicPageWrapper/BasicPageWrapper";
 import Container from "Components/Container/Container";
 import UnhideOnViewportWrapper from "Animations/UnhideOnViewportWrapper";
+import PageInfoAlert from "Components/PageInfoAlert/PageInfoAlert";
 /* Zustand */
 import { useDataManagerStore } from "Components/DataManager/DataManager.store"
 /* i18n */
@@ -35,7 +36,8 @@ const ApiKeyPage = () => {
 
     return (
         <BasicPageWrapper>
-            <UnhideOnViewportWrapper>
+            <PageInfoAlert />
+            <UnhideOnViewportWrapper>   
                 <Container style={{minHeight: "100vh"}}>
                     <div className="api-key-page-input-wrapper">
                         <p>{t("enter_your_api_key")}</p>

@@ -14,6 +14,7 @@ import CustomPieChart from "Components/Charts/CustomPieChart/CustomPieChart";
 import RoasCpaBarChart from "Components/Charts/RoasCpaBarChart/RoasCpaBarChart";
 import ConversionsSankeyChart from "Components/Charts/ConversionsSankeyChart/ConversionsSankeyChart";
 import InvalidApiKeyBlock from "Components/InvalidApiKeyBlock/InvalidApiKeyBlock";
+import PageInfoAlert from "Components/PageInfoAlert/PageInfoAlert";
 /* Zustand */
 import { useDataManagerStore } from "Components/DataManager/DataManager.store";
 
@@ -27,6 +28,7 @@ const DashboardPage = () => {
 
     return (
         <BasicPageWrapper>
+            <PageInfoAlert />
             <InvalidApiKeyBlock>
                 <BasicContentWrapper heading={`${t("dashboard_page_heading")} - ${selectedPartition?.brand}`}>
                     <Container  justifyContent="start" alignContent="flex-start" alignItems="stretch" 

@@ -1,6 +1,8 @@
 import apiCall from "Utils/apiCall"
 import { getSummaryStatisticsUrl } from "Components/DataManager/api/urlBuilder"
 import { summaryStatisticsInterface } from "Components/DataManager/DataManager.interfaces"
+import { offlineDataMode } from "config"
+
 
 interface getSummaryStatisticsInterface {
     xApiKey: string,
@@ -17,6 +19,10 @@ const getSummaryStatistics = async ({
         toDate,
         optimisationTarget,
 }: getSummaryStatisticsInterface): Promise<summaryStatisticsInterface | null> => {
+    if (offlineDataMode === true){
+        const data: summaryStatisticsInterface = require('Components/DataManager/data/getSummaryStatistics.json')
+        return data
+    }
 
     let response = await apiCall({
         method: "GET",

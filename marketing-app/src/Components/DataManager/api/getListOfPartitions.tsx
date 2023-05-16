@@ -1,6 +1,7 @@
 import apiCall from "Utils/apiCall"
 import { getListOfPartitionsUrl } from "Components/DataManager/api/urlBuilder"
 import { paritionInterface } from "Components/DataManager/DataManager.interfaces"
+import { offlineDataMode } from "config"
 
 
 interface getListOfPartitionsInterface {
@@ -10,6 +11,11 @@ interface getListOfPartitionsInterface {
 }
 
 const getListOfPartitions = async ({xApiKey, offset, limit}: getListOfPartitionsInterface): Promise<Array<paritionInterface> | null> => {
+    if (offlineDataMode === true){
+        const data: Array<paritionInterface> = require('Components/DataManager/data/listAvailablePartitions.json')
+        return data
+    }
+
     let response = await apiCall({
         method: "GET",
         url: getListOfPartitionsUrl(),

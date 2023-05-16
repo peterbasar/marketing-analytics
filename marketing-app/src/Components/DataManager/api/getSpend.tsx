@@ -1,6 +1,7 @@
 import apiCall from "Utils/apiCall"
 import { getSpendUrl } from "Components/DataManager/api/urlBuilder"
-import { revenueInterface } from "Components/DataManager/DataManager.interfaces"
+import { spendInterface } from "Components/DataManager/DataManager.interfaces"
+import { offlineDataMode } from "config"
 
 
 interface getSpendInterface {
@@ -17,7 +18,11 @@ const getSpend = async ({
         fromDate,
         toDate,
         optimisationTarget,
-}: getSpendInterface): Promise<revenueInterface | null> => {
+}: getSpendInterface): Promise<spendInterface | null> => {
+    if (offlineDataMode === true){
+        const data: spendInterface = require('Components/DataManager/data/getSpend.json')
+        return data
+    }
 
     let response = await apiCall({
         method: "GET",

@@ -1,5 +1,8 @@
 export const translations = {
     translation: {
+        /* Info */
+        page_in_offline_mode: "The page currently has API requesting disabled, and all the shown data is loaded locally. This was a prototype website with functional API data requesting, but it is now discontinued, and the API endpoints that were previously used were relieved from requests. API requesting is discontinued because the API endpoint required a private API key and was owned by another company, and was intended to be used for demo showcase only. Due to data being loaded locally, functionalities such as the date range picker and others are not actively fetching new data, thus not working as expected.",
+
         /* Page link names */
         set_api_link: "Set your API key",
         select_partition_link: "Select your partition",

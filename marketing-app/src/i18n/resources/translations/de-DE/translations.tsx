@@ -1,5 +1,8 @@
 export const translations = {
     translation: {
+        /* Info */
+        page_in_offline_mode: "Auf der Seite ist die API-Anfrage derzeit deaktiviert und alle angezeigten Daten werden lokal geladen. Hierbei handelte es sich um eine Prototyp-Website mit funktionaler API-Datenanforderung, die jedoch inzwischen eingestellt wurde und die zuvor verwendeten API-Endpunkte von Anfragen entlastet wurden. Die API-Anfrage wird eingestellt, da der API-Endpunkt einen privaten API-Schlüssel erforderte, einem anderen Unternehmen gehörte und nur für die Demo-Präsentation gedacht war. Da die Daten lokal geladen werden, rufen Funktionen wie die Datumsbereichsauswahl und andere nicht aktiv neue Daten ab und funktionieren daher nicht wie erwartet.",
+
         /* Page link names */
         set_api_link: "Legen Sie Ihren API-Schlüssel fest",
         select_partition_link: "Wählen Sie Ihre Partition aus",

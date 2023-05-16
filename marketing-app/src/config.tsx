@@ -1,3 +1,6 @@
+export const offlineDataMode: boolean = true 
+/* If the page is offline - ignore data fetching and load the local data instead */
+
 export enum FRONTEND_ENDPOINTS {
     APIKEY = "/", 
     PARTITION = "/partition",

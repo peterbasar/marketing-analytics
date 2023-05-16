@@ -1,6 +1,7 @@
 import apiCall from "Utils/apiCall"
 import { getConversionsUrl } from "Components/DataManager/api/urlBuilder"
 import { revenueInterface } from "Components/DataManager/DataManager.interfaces"
+import { offlineDataMode } from "config"
 
 
 interface getConversionsInterface {
@@ -18,6 +19,10 @@ const getConversions = async ({
         toDate,
         optimisationTarget,
 }: getConversionsInterface): Promise<revenueInterface | null> => {
+    if (offlineDataMode === true){
+        const data: revenueInterface = require('Components/DataManager/data/getConversions')
+        return data
+    }
 
     let response = await apiCall({
         method: "GET",

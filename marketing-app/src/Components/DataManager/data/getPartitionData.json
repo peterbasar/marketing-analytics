@@ -1,0 +1,1832 @@
+[
+    {
+        "date": "2022-06-01",
+        "source": "direct",
+        "attributed_conversions": 26.3844061500084,
+        "attributed_revenue": 2871.98303714751,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-02",
+        "source": "direct",
+        "attributed_conversions": 30.7446882920975,
+        "attributed_revenue": 3268.56188190154,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-03",
+        "source": "direct",
+        "attributed_conversions": 19.6751581253229,
+        "attributed_revenue": 2131.03521447108,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-04",
+        "source": "direct",
+        "attributed_conversions": 19.5669389000459,
+        "attributed_revenue": 2183.20623525262,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-05",
+        "source": "direct",
+        "attributed_conversions": 31.6880087376234,
+        "attributed_revenue": 3673.66316116054,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-06",
+        "source": "direct",
+        "attributed_conversions": 38.6634830698314,
+        "attributed_revenue": 4102.89239555514,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-07",
+        "source": "direct",
+        "attributed_conversions": 29.27689933756,
+        "attributed_revenue": 3225.94506849254,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-08",
+        "source": "direct",
+        "attributed_conversions": 28.4985234331867,
+        "attributed_revenue": 2738.80894285831,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-09",
+        "source": "direct",
+        "attributed_conversions": 27.1127683905059,
+        "attributed_revenue": 3336.17330353031,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-10",
+        "source": "direct",
+        "attributed_conversions": 61.6049982328539,
+        "attributed_revenue": 8833.32411653701,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-11",
+        "source": "direct",
+        "attributed_conversions": 28.0618922298347,
+        "attributed_revenue": 3141.31952101582,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-12",
+        "source": "direct",
+        "attributed_conversions": 28.7102932569071,
+        "attributed_revenue": 3441.84516774043,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-13",
+        "source": "direct",
+        "attributed_conversions": 36.1401127925137,
+        "attributed_revenue": 4494.41708360543,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-14",
+        "source": "direct",
+        "attributed_conversions": 30.9608958772161,
+        "attributed_revenue": 3355.35568108878,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-15",
+        "source": "direct",
+        "attributed_conversions": 18.7629862875168,
+        "attributed_revenue": 2133.84792875574,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-16",
+        "source": "direct",
+        "attributed_conversions": 26.573411685544,
+        "attributed_revenue": 2968.09196249499,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-17",
+        "source": "direct",
+        "attributed_conversions": 22.831448183723,
+        "attributed_revenue": 2505.53018495439,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-18",
+        "source": "direct",
+        "attributed_conversions": 24.060652085408,
+        "attributed_revenue": 2782.24777516946,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-19",
+        "source": "direct",
+        "attributed_conversions": 33.1382541686414,
+        "attributed_revenue": 3677.40874894995,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-20",
+        "source": "direct",
+        "attributed_conversions": 31.8467837293089,
+        "attributed_revenue": 3858.27297393489,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-21",
+        "source": "direct",
+        "attributed_conversions": 26.5422069775648,
+        "attributed_revenue": 2746.67902597842,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-22",
+        "source": "direct",
+        "attributed_conversions": 25.0983376102821,
+        "attributed_revenue": 2730.53477120372,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-23",
+        "source": "direct",
+        "attributed_conversions": 23.8877653432645,
+        "attributed_revenue": 2295.07492777533,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-24",
+        "source": "direct",
+        "attributed_conversions": 20.8991284518307,
+        "attributed_revenue": 1901.30151076769,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-25",
+        "source": "direct",
+        "attributed_conversions": 23.1938368613402,
+        "attributed_revenue": 2767.95717665595,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-26",
+        "source": "direct",
+        "attributed_conversions": 30.3671397447724,
+        "attributed_revenue": 3389.07401931575,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-27",
+        "source": "direct",
+        "attributed_conversions": 34.6936596116327,
+        "attributed_revenue": 3731.60291298083,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-28",
+        "source": "direct",
+        "attributed_conversions": 31.7912506882657,
+        "attributed_revenue": 3193.1219290611,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-29",
+        "source": "direct",
+        "attributed_conversions": 36.1656297319557,
+        "attributed_revenue": 3800.51850810269,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-06-30",
+        "source": "direct",
+        "attributed_conversions": 27.9546878207674,
+        "attributed_revenue": 2615.38956411259,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-01",
+        "source": "direct",
+        "attributed_conversions": 19.8650064345641,
+        "attributed_revenue": 2900.65248256347,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-02",
+        "source": "direct",
+        "attributed_conversions": 19.440029441269,
+        "attributed_revenue": 2173.30343205409,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-03",
+        "source": "direct",
+        "attributed_conversions": 30.2012504496873,
+        "attributed_revenue": 3718.56111133597,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-04",
+        "source": "direct",
+        "attributed_conversions": 34.0753852325267,
+        "attributed_revenue": 3708.37059720615,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-05",
+        "source": "direct",
+        "attributed_conversions": 34.6305812425085,
+        "attributed_revenue": 3343.31326999898,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-06",
+        "source": "direct",
+        "attributed_conversions": 27.0036173019357,
+        "attributed_revenue": 3395.02673976512,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-07",
+        "source": "direct",
+        "attributed_conversions": 25.7274429224027,
+        "attributed_revenue": 2666.22694317775,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-08",
+        "source": "direct",
+        "attributed_conversions": 22.0257256856439,
+        "attributed_revenue": 2601.63022097757,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-09",
+        "source": "direct",
+        "attributed_conversions": 22.2095684442569,
+        "attributed_revenue": 2132.74820113272,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-10",
+        "source": "direct",
+        "attributed_conversions": 29.4694965596104,
+        "attributed_revenue": 3449.13872859218,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-11",
+        "source": "direct",
+        "attributed_conversions": 30.865426385612,
+        "attributed_revenue": 3517.92478755762,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-12",
+        "source": "direct",
+        "attributed_conversions": 30.3510355461087,
+        "attributed_revenue": 3902.15519269318,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-13",
+        "source": "direct",
+        "attributed_conversions": 29.1713774554321,
+        "attributed_revenue": 3780.25784933238,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-14",
+        "source": "direct",
+        "attributed_conversions": 26.0675738730005,
+        "attributed_revenue": 2932.54389339895,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-15",
+        "source": "direct",
+        "attributed_conversions": 37.8020975237071,
+        "attributed_revenue": 3329.63523543415,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-16",
+        "source": "direct",
+        "attributed_conversions": 27.9341947043989,
+        "attributed_revenue": 2845.85690996685,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-17",
+        "source": "direct",
+        "attributed_conversions": 32.9611555243649,
+        "attributed_revenue": 3276.2888490928,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-18",
+        "source": "direct",
+        "attributed_conversions": 25.7576846059312,
+        "attributed_revenue": 2899.80013293573,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-19",
+        "source": "direct",
+        "attributed_conversions": 21.536731023811,
+        "attributed_revenue": 2496.27035141061,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-20",
+        "source": "direct",
+        "attributed_conversions": 24.8078135453516,
+        "attributed_revenue": 2664.75787177417,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-21",
+        "source": "direct",
+        "attributed_conversions": 23.4180209959501,
+        "attributed_revenue": 2741.16214855928,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-22",
+        "source": "direct",
+        "attributed_conversions": 59.8984139079281,
+        "attributed_revenue": 6836.82515392751,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-23",
+        "source": "direct",
+        "attributed_conversions": 39.606057348776,
+        "attributed_revenue": 4233.39349713196,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-24",
+        "source": "direct",
+        "attributed_conversions": 42.8149847744378,
+        "attributed_revenue": 4475.63651057969,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-25",
+        "source": "direct",
+        "attributed_conversions": 39.8811088835118,
+        "attributed_revenue": 4114.0235253182,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-26",
+        "source": "direct",
+        "attributed_conversions": 29.3724412927381,
+        "attributed_revenue": 2605.25752211868,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-27",
+        "source": "direct",
+        "attributed_conversions": 27.5704336850074,
+        "attributed_revenue": 2981.9725184643,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-28",
+        "source": "direct",
+        "attributed_conversions": 31.2682174347232,
+        "attributed_revenue": 3405.01103251877,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-29",
+        "source": "direct",
+        "attributed_conversions": 30.2225348687956,
+        "attributed_revenue": 3099.0858866349,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-30",
+        "source": "direct",
+        "attributed_conversions": 49.1591201915075,
+        "attributed_revenue": 5629.74489993524,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-07-31",
+        "source": "direct",
+        "attributed_conversions": 55.2648773965835,
+        "attributed_revenue": 5635.79860901328,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-01",
+        "source": "direct",
+        "attributed_conversions": 32.4765197658501,
+        "attributed_revenue": 3148.14262956471,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-02",
+        "source": "direct",
+        "attributed_conversions": 27.8474066218487,
+        "attributed_revenue": 3196.1989476719,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-03",
+        "source": "direct",
+        "attributed_conversions": 30.1002635753806,
+        "attributed_revenue": 3250.106496051,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-04",
+        "source": "direct",
+        "attributed_conversions": 29.8347062495432,
+        "attributed_revenue": 3281.06612614729,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-05",
+        "source": "direct",
+        "attributed_conversions": 26.1753847640016,
+        "attributed_revenue": 2692.47584767584,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-06",
+        "source": "direct",
+        "attributed_conversions": 27.6956040467741,
+        "attributed_revenue": 2841.39559621434,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-07",
+        "source": "direct",
+        "attributed_conversions": 37.4992982546341,
+        "attributed_revenue": 3789.20004433504,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-08",
+        "source": "direct",
+        "attributed_conversions": 41.3976929683916,
+        "attributed_revenue": 4561.80162291174,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-09",
+        "source": "direct",
+        "attributed_conversions": 25.5179596018258,
+        "attributed_revenue": 2619.53495083788,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-10",
+        "source": "direct",
+        "attributed_conversions": 29.8976378795198,
+        "attributed_revenue": 3316.83515293103,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-11",
+        "source": "direct",
+        "attributed_conversions": 27.1719872823086,
+        "attributed_revenue": 2611.57420153878,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-12",
+        "source": "direct",
+        "attributed_conversions": 29.4538331610905,
+        "attributed_revenue": 3308.88733785051,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-13",
+        "source": "direct",
+        "attributed_conversions": 26.7954107852804,
+        "attributed_revenue": 2979.19219670002,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-14",
+        "source": "direct",
+        "attributed_conversions": 34.1421419154525,
+        "attributed_revenue": 3775.3969179,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-15",
+        "source": "direct",
+        "attributed_conversions": 32.3774126712154,
+        "attributed_revenue": 3367.04801935367,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-16",
+        "source": "direct",
+        "attributed_conversions": 30.4967313527389,
+        "attributed_revenue": 3924.37862872558,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-17",
+        "source": "direct",
+        "attributed_conversions": 28.4455196174923,
+        "attributed_revenue": 3286.74402909397,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-18",
+        "source": "direct",
+        "attributed_conversions": 103.35351951746,
+        "attributed_revenue": 12364.0607902173,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-19",
+        "source": "direct",
+        "attributed_conversions": 45.6565730360359,
+        "attributed_revenue": 4795.60100933914,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-20",
+        "source": "direct",
+        "attributed_conversions": 37.013314624047,
+        "attributed_revenue": 4610.57615431985,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-21",
+        "source": "direct",
+        "attributed_conversions": 40.7597773516163,
+        "attributed_revenue": 4645.07025265094,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-22",
+        "source": "direct",
+        "attributed_conversions": 40.3487139834114,
+        "attributed_revenue": 3981.91552330591,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-23",
+        "source": "direct",
+        "attributed_conversions": 28.7352403856356,
+        "attributed_revenue": 2678.02272539833,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-24",
+        "source": "direct",
+        "attributed_conversions": 55.1111587903108,
+        "attributed_revenue": 6356.39358688813,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-25",
+        "source": "direct",
+        "attributed_conversions": 28.7084609525915,
+        "attributed_revenue": 3671.61161879303,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-26",
+        "source": "direct",
+        "attributed_conversions": 24.0643229930708,
+        "attributed_revenue": 3011.52661579822,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-27",
+        "source": "direct",
+        "attributed_conversions": 26.6287517371466,
+        "attributed_revenue": 3319.98400408164,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-28",
+        "source": "direct",
+        "attributed_conversions": 29.9612330438645,
+        "attributed_revenue": 3791.63821531388,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-29",
+        "source": "direct",
+        "attributed_conversions": 32.2407051627948,
+        "attributed_revenue": 3662.17648381877,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-30",
+        "source": "direct",
+        "attributed_conversions": 31.3845416759345,
+        "attributed_revenue": 3251.04827562834,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-08-31",
+        "source": "direct",
+        "attributed_conversions": 33.1517996146858,
+        "attributed_revenue": 3733.24436912173,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-01",
+        "source": "direct",
+        "attributed_conversions": 46.8337636381077,
+        "attributed_revenue": 5509.48722202335,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-02",
+        "source": "direct",
+        "attributed_conversions": 38.6193254027918,
+        "attributed_revenue": 4988.63150785051,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-03",
+        "source": "direct",
+        "attributed_conversions": 41.0941591825351,
+        "attributed_revenue": 4367.1860137433,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-04",
+        "source": "direct",
+        "attributed_conversions": 52.6696859145842,
+        "attributed_revenue": 5464.11221960437,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-05",
+        "source": "direct",
+        "attributed_conversions": 43.1570472068043,
+        "attributed_revenue": 5155.58639198933,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-06",
+        "source": "direct",
+        "attributed_conversions": 49.1482815531211,
+        "attributed_revenue": 4926.69194866334,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-07",
+        "source": "direct",
+        "attributed_conversions": 45.9810929145776,
+        "attributed_revenue": 4678.75648235208,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-08",
+        "source": "direct",
+        "attributed_conversions": 46.0216014672437,
+        "attributed_revenue": 4944.70773909216,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-09",
+        "source": "direct",
+        "attributed_conversions": 50.0889806264104,
+        "attributed_revenue": 5308.55493054824,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-10",
+        "source": "direct",
+        "attributed_conversions": 43.8718468057826,
+        "attributed_revenue": 4664.04737095618,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-11",
+        "source": "direct",
+        "attributed_conversions": 54.4874599448441,
+        "attributed_revenue": 5676.13662069096,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-12",
+        "source": "direct",
+        "attributed_conversions": 39.7393452514079,
+        "attributed_revenue": 4541.19371386181,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-13",
+        "source": "direct",
+        "attributed_conversions": 40.0480625305714,
+        "attributed_revenue": 3535.41506602594,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-14",
+        "source": "direct",
+        "attributed_conversions": 39.5843655495114,
+        "attributed_revenue": 4097.10099139317,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-15",
+        "source": "direct",
+        "attributed_conversions": 36.5397905659822,
+        "attributed_revenue": 3395.93547084614,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-16",
+        "source": "direct",
+        "attributed_conversions": 50.0314320364122,
+        "attributed_revenue": 4730.01226068342,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-17",
+        "source": "direct",
+        "attributed_conversions": 44.8067592359601,
+        "attributed_revenue": 4019.76372692211,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-18",
+        "source": "direct",
+        "attributed_conversions": 56.5511408152694,
+        "attributed_revenue": 5576.13599825613,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-19",
+        "source": "direct",
+        "attributed_conversions": 87.3548471554684,
+        "attributed_revenue": 7103.30649955077,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-20",
+        "source": "direct",
+        "attributed_conversions": 50.7862635511064,
+        "attributed_revenue": 5311.96634068129,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-21",
+        "source": "direct",
+        "attributed_conversions": 52.2903872053263,
+        "attributed_revenue": 5230.91908285654,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-22",
+        "source": "direct",
+        "attributed_conversions": 34.4660265486597,
+        "attributed_revenue": 3302.26278902476,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-23",
+        "source": "direct",
+        "attributed_conversions": 26.7311293255309,
+        "attributed_revenue": 2675.16302073915,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-24",
+        "source": "direct",
+        "attributed_conversions": 37.8376991155218,
+        "attributed_revenue": 3677.46532586098,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-25",
+        "source": "direct",
+        "attributed_conversions": 50.2466169352737,
+        "attributed_revenue": 5378.88808764863,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-26",
+        "source": "direct",
+        "attributed_conversions": 24.7671943001037,
+        "attributed_revenue": 2500.72479795416,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-27",
+        "source": "direct",
+        "attributed_conversions": 42.3508414252597,
+        "attributed_revenue": 3926.3861472544,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-28",
+        "source": "direct",
+        "attributed_conversions": 45.183024217739,
+        "attributed_revenue": 4544.97053678528,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-29",
+        "source": "direct",
+        "attributed_conversions": 44.7174084350086,
+        "attributed_revenue": 4788.39191367685,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-09-30",
+        "source": "direct",
+        "attributed_conversions": 54.2357876974557,
+        "attributed_revenue": 5698.15712992603,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-01",
+        "source": "direct",
+        "attributed_conversions": 75.5934447160691,
+        "attributed_revenue": 7090.96208861439,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-02",
+        "source": "direct",
+        "attributed_conversions": 57.7093649936115,
+        "attributed_revenue": 5668.28425466031,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-03",
+        "source": "direct",
+        "attributed_conversions": 56.4118778967827,
+        "attributed_revenue": 5918.63371322073,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-04",
+        "source": "direct",
+        "attributed_conversions": 43.8110319745322,
+        "attributed_revenue": 4707.78677035728,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-05",
+        "source": "direct",
+        "attributed_conversions": 46.2741745169333,
+        "attributed_revenue": 5021.39280008956,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-06",
+        "source": "direct",
+        "attributed_conversions": 49.1854638451292,
+        "attributed_revenue": 5275.32715751223,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-07",
+        "source": "direct",
+        "attributed_conversions": 109.967557833214,
+        "attributed_revenue": 10516.6942456142,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-08",
+        "source": "direct",
+        "attributed_conversions": 69.1938132314912,
+        "attributed_revenue": 7122.66924785965,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-09",
+        "source": "direct",
+        "attributed_conversions": 95.4790852470437,
+        "attributed_revenue": 10605.3918909069,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-10",
+        "source": "direct",
+        "attributed_conversions": 58.0845626417548,
+        "attributed_revenue": 6306.71033621849,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-11",
+        "source": "direct",
+        "attributed_conversions": 43.1523338737383,
+        "attributed_revenue": 4464.90771648228,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-12",
+        "source": "direct",
+        "attributed_conversions": 44.7610410580202,
+        "attributed_revenue": 4889.0629668623,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-13",
+        "source": "direct",
+        "attributed_conversions": 60.2137796695082,
+        "attributed_revenue": 5920.54597864225,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-14",
+        "source": "direct",
+        "attributed_conversions": 44.5094803632051,
+        "attributed_revenue": 4407.88895109328,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-15",
+        "source": "direct",
+        "attributed_conversions": 46.7978462408968,
+        "attributed_revenue": 4852.84266787474,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-16",
+        "source": "direct",
+        "attributed_conversions": 56.5656876697928,
+        "attributed_revenue": 6108.85705738933,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-17",
+        "source": "direct",
+        "attributed_conversions": 37.6228569822707,
+        "attributed_revenue": 4137.6053790311,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-18",
+        "source": "direct",
+        "attributed_conversions": 38.2260119552029,
+        "attributed_revenue": 3698.08047261915,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-19",
+        "source": "direct",
+        "attributed_conversions": 40.4950314345345,
+        "attributed_revenue": 4320.8964118357,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-20",
+        "source": "direct",
+        "attributed_conversions": 39.8792948934966,
+        "attributed_revenue": 3861.25497935709,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-21",
+        "source": "direct",
+        "attributed_conversions": 32.2634623085644,
+        "attributed_revenue": 3682.23098242503,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-22",
+        "source": "direct",
+        "attributed_conversions": 30.8663403311061,
+        "attributed_revenue": 3158.09067533368,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-23",
+        "source": "direct",
+        "attributed_conversions": 54.2327733464736,
+        "attributed_revenue": 5196.30910054024,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-24",
+        "source": "direct",
+        "attributed_conversions": 43.9591018205868,
+        "attributed_revenue": 4642.94309542692,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-25",
+        "source": "direct",
+        "attributed_conversions": 43.9862152861048,
+        "attributed_revenue": 4741.1119845269,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-26",
+        "source": "direct",
+        "attributed_conversions": 50.3990753474202,
+        "attributed_revenue": 4551.34849814801,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-27",
+        "source": "direct",
+        "attributed_conversions": 46.7581236244269,
+        "attributed_revenue": 4563.95742060623,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-28",
+        "source": "direct",
+        "attributed_conversions": 51.9670080737975,
+        "attributed_revenue": 4951.11403474682,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-29",
+        "source": "direct",
+        "attributed_conversions": 40.2377647586546,
+        "attributed_revenue": 4661.56826138519,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-30",
+        "source": "direct",
+        "attributed_conversions": 59.6194547009418,
+        "attributed_revenue": 5911.50666849563,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-10-31",
+        "source": "direct",
+        "attributed_conversions": 51.6077008994729,
+        "attributed_revenue": 5333.99536066986,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-01",
+        "source": "direct",
+        "attributed_conversions": 78.0813242208295,
+        "attributed_revenue": 8410.51784013442,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-02",
+        "source": "direct",
+        "attributed_conversions": 63.1173101234354,
+        "attributed_revenue": 7396.19220384761,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-03",
+        "source": "direct",
+        "attributed_conversions": 55.2321283346679,
+        "attributed_revenue": 6374.7289876055,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-04",
+        "source": "direct",
+        "attributed_conversions": 53.637032489859,
+        "attributed_revenue": 5874.92320308397,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-05",
+        "source": "direct",
+        "attributed_conversions": 56.4851956026887,
+        "attributed_revenue": 6201.28224072571,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-06",
+        "source": "direct",
+        "attributed_conversions": 59.8694943281546,
+        "attributed_revenue": 7098.31956575405,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-07",
+        "source": "direct",
+        "attributed_conversions": 62.3965240133716,
+        "attributed_revenue": 6905.57716700261,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-08",
+        "source": "direct",
+        "attributed_conversions": 70.0447100829528,
+        "attributed_revenue": 7382.13824907045,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-09",
+        "source": "direct",
+        "attributed_conversions": 54.3194216356398,
+        "attributed_revenue": 5800.26449953202,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-10",
+        "source": "direct",
+        "attributed_conversions": 43.5747205342679,
+        "attributed_revenue": 4502.87481565608,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-11",
+        "source": "direct",
+        "attributed_conversions": 66.971656644253,
+        "attributed_revenue": 6794.27307165641,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-12",
+        "source": "direct",
+        "attributed_conversions": 52.697231478585,
+        "attributed_revenue": 6588.1220533428,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-13",
+        "source": "direct",
+        "attributed_conversions": 62.835166524231,
+        "attributed_revenue": 7125.87816250767,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-14",
+        "source": "direct",
+        "attributed_conversions": 58.6325717475888,
+        "attributed_revenue": 5912.86527537303,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-15",
+        "source": "direct",
+        "attributed_conversions": 52.2934731202414,
+        "attributed_revenue": 6018.78701340501,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-16",
+        "source": "direct",
+        "attributed_conversions": 49.3290889733906,
+        "attributed_revenue": 5158.75212240307,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-17",
+        "source": "direct",
+        "attributed_conversions": 31.2878117383803,
+        "attributed_revenue": 3997.27535285196,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-18",
+        "source": "direct",
+        "attributed_conversions": 53.5965809938754,
+        "attributed_revenue": 6087.95056115622,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-19",
+        "source": "direct",
+        "attributed_conversions": 56.0275204410985,
+        "attributed_revenue": 6632.4757938713,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-20",
+        "source": "direct",
+        "attributed_conversions": 82.997058666014,
+        "attributed_revenue": 10041.064737083,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-21",
+        "source": "direct",
+        "attributed_conversions": 98.7652863149698,
+        "attributed_revenue": 9252.41732368298,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-22",
+        "source": "direct",
+        "attributed_conversions": 63.4471810820786,
+        "attributed_revenue": 8516.7821047853,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-23",
+        "source": "direct",
+        "attributed_conversions": 60.9254497583938,
+        "attributed_revenue": 7670.45952158436,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-24",
+        "source": "direct",
+        "attributed_conversions": 68.9464689963816,
+        "attributed_revenue": 9082.65181694668,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-25",
+        "source": "direct",
+        "attributed_conversions": 141.359331769827,
+        "attributed_revenue": 6553.21869030086,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-26",
+        "source": "direct",
+        "attributed_conversions": 74.3556580795612,
+        "attributed_revenue": 7297.06083201455,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-27",
+        "source": "direct",
+        "attributed_conversions": 82.5358419427865,
+        "attributed_revenue": 9897.31153096098,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-28",
+        "source": "direct",
+        "attributed_conversions": 73.7489220912126,
+        "attributed_revenue": 8155.30034021481,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-29",
+        "source": "direct",
+        "attributed_conversions": 60.9993890676295,
+        "attributed_revenue": 7780.02742213479,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    },
+    {
+        "date": "2022-11-30",
+        "source": "direct",
+        "attributed_conversions": 60.8756459976403,
+        "attributed_revenue": 6193.00398570676,
+        "type": "baseline",
+        "spends": 0.0,
+        "partition_id": "932561105d21a54d3d1d2a941164ffec321cd76b",
+        "optimisation_target": "revenue"
+    }
+]

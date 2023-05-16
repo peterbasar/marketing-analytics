@@ -8,6 +8,8 @@ import {
 
 
 export interface useDataManagerStoreInterface {
+    offline: boolean,
+
     apiKey: string,
     setApiKey: (value: string) => void,
 
@@ -48,6 +50,8 @@ export interface useDataManagerStoreInterface {
 export const useDataManagerStore = create(persist<useDataManagerStoreInterface>((
     (set, get) => (
         {
+            offline: true,
+
             apiKey: "",
             setApiKey: (value) => {
                 set({ apiKey: value })
